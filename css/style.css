@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+/* #mb */
+
+#mb {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+#mb video {
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* #section1 */
+
+.cd-slider {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+}
+.cd-slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: visibility 0s 1s;
+  will-change: visibility;
+}
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  clip: rect(0, 800px, 500px, 800px);
+  transition: clip 0.5s cubic-bezier(0.99, 0.01, 0.45, 0.9) 0.5s;
+  will-change: clip;
+}
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  text-align: right;
+}
+.content h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transform: translateY(-30%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  will-change: transform, opacity;
+}
+.content h1 {
+  margin: 40px 0 20px;
+  font-style: normal;
+  color: #333;
+  text-overflow: ellipsis;
+  opacity: 0;
+  transform: translateY(-30%);
+  transition: transform 0.5s 0.1s, opacity 0.5s 0.1s;
+  will-change: transform, opacity;
+}
+.content a {
+  opacity: 0;
+  transform: translateY(-30%);
+  transition: transform 0.5s 0.1s, opacity 0.5s 0.1s;
+  will-change: transform, opacity;
+}
+/* Current Slide 
+-------------------------------------*/
+li.current {
+  visibility: visible;
+  transition-delay: 0s;
+}
+li.current .image {
+  clip: rect(0, 80rem, 50rem, 0);
+}
+li.current .content h2 {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1s;
+}
+li.current .content h1 {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1.1s;
+}
+li.current .content a {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1.2s;
+}
+/* Prev Slide 
+------------------------------------*/
+li.prev_slide .image {
+  clip: rect(0, 0, 50rem, 0);
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  background: #fff;
+  z-index: 2;
+}
+.prev,
+.next,
+.counter {
+  vertical-align: middle;
+}
+.prev,
+.next {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 80px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.next {
+  margin-left: 15px;
+}
+.prev::before,
+.next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+  border-right-width: 15px;
+  border-right-color: #000;
+  border-left-width: 0;
+  width: 0;
+  height: 0;
+}
+.prev::after,
+.next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateZ(0);
+  left: 15px;
+  background: #000;
+  height: 1px;
+  min-height: 1px;
+  width: 30px;
+  transition: width 0.3s;
+}
+.next::before {
+  right: 0;
+  left: auto;
+  border-left-width: 15px;
+  border-left-color: #000;
+  border-right-width: 0;
+}
+.next::after {
+  right: 15px;
+  left: auto;
+}
+.counter {
+  display: inline-block;
+  font-size: 20px;
+  font-style: italic;
+}
+.counter span {
+  display: inline-block;
+  width: 15px;
+}
+.counter span:last-child::before {
+  content: "/";
+  margin: 0 5px;
+}
+.prev:hover::after,
+.next:hover::after {
+  width: 50px;
+}
+
+/* #section2 */
+
+#section2 .contents {
+  width: 100%;
+}
+#section2 .view.delete {
+  display: none;
+}
+#section2 .photo {
+  width: 100%;
+  padding: 25%;
+  margin-bottom: 20px;
+  background-image: url(../images/section2_01_p.png);
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s;
+}
+#section2 .text p:nth-child(1) {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(5, 14, 145);
+}
+#section2 .text p:nth-child(2) {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#section2 .tag {
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #999;
+}
+#section2 .tabs {
+  border-top: 1px solid rgb(5, 14, 145);
+}
+#section2 .tab {
+  margin-top: 20px;
+}
+#section2 .tab:hover img {
+  opacity: 1;
+}
+#section2 .tab img {
+  width: 100%;
+  opacity: 0.7;
+}
+#section2 .tab_current img {
+  opacity: 1;
+}
+
+/* #section6 */
+
+#section6 {
+  height: 100%;
+  text-align: center;
+}
+/* 세로 슬라이드의 경우 .swiper-container와 .swiper-container의 상위요소 모두에 height값 줘야함 (100% 줘도됨) */
+#section6 .news {
+  height: 35px;
+  color: #fff;
+  background: rgb(5, 15, 145);
+  line-height: 35px;
+  overflow: hidden;
+}
+#section6 .news .title {
+  float: left;
+  min-width: 35px;
+  width: 15%;
+  font-size: 14px;
+  font-weight: bold;
+  background: #000;
+}
+#section6 .news .contents {
+  float: left;
+  width: 85%;
+  height: 100%;
+  padding-left: 2%;
+  text-align: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#section6 .news .contents a {
+  color: #fff;
+}
+#section6 .news .swiper-container {
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+  /* #section1 */
+  .cd-slider {
+    height: 70vw;
+  }
+  .image {
+    width: 70%;
+  }
+  .content {
+    padding: 50px 20px 0 20px;
+  }
+  nav {
+    left: auto;
+    right: 0;
+  }
+
+  /* #section2 */
+  #section2 .photo {
+    margin-bottom: 30px;
+  }
+  #section2 .text p:nth-child(1) {
+    font-size: 17px;
+  }
+  #section2 .text p:nth-child(2) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  #section2 .tag {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+  #section2 .tab {
+    margin-top: 30px;
+  }
+
+  /* #section6 */
+  #section6 .news {
+    height: 37px;
+    line-height: 37px;
+  }
+  #section6 .news .title {
+    width: 25%;
+    font-size: 16px;
+  }
+  #section6 .news .contents {
+    width: 75%;
+    padding-left: 10%;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .col-40-md {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .col-55-md {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 55%;
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+  /* #section2 */
+  #section2 .view.block_md {
+    display: block;
+  }
+  #section2 .photo {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  #section2 .text p:nth-child(1) {
+    font-size: 18px;
+  }
+  #section2 .text p:nth-child(2) {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  #section2 .tag {
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  #section2 .tab {
+    margin-top: 40px;
+  }
+
+  #section6 .news {
+    height: 40px;
+    line-height: 40px;
+  }
+  #section6 .news .title {
+    font-size: 17px;
+  }
+  #section6 .news .contents {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #section6 .news {
+    height: 42px;
+    line-height: 42px;
+  }
+  #section6 .news .title {
+    font-size: 18px;
+  }
+  #section6 .news .contents {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  /* #section1 */
+  .cd-slider {
+    height: 50vh;
+  }
+
+  /* #section6 */
+  #section2 .photo {
+    padding: 0;
+  }
+
+  /* #section6 */
+  #section6 .news {
+    height: 45px;
+    line-height: 45px;
+  }
+  #section6 .news .title {
+    width: 34%;
+  }
+  #section6 .news .contents {
+    width: 66%;
+    padding-left: 16%;
+  }
+}
+@media (min-width: 1400px) {
+}

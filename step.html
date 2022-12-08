@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body id="step">
+    <header>
+        <div class="grid reset">
+            <div class="wrap">
+                <h6><a href="index.html"><img src="images/logo_white.png" alt="더본코리아"></a></h6>
+
+                <div class="list delete_xl">
+                    <ul>
+                        <li>
+                            <p><span>창업안내 <i class="fas fa-caret-down icon_arrow_text"></i></span></p> <!-- TODO: -->
+                            <ul class="reset">
+                                <a href="step.html">
+                                    <li class="bold color1">창업절차</li> <!-- FIXME: -->
+                                </a>
+                                <a href="policy.html">
+                                    <li>경영방침</li>
+                                </a>
+                                <a href="briefing.html">
+                                    <li>창업설명회</li>
+                                    <a href="faq.html">
+                                        <li>FAQ</li>
+                                    </a>
+                                    <a href="inquiry.html">
+                                        <li>창업문의</li>
+                                    </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- 로고 & .list -->
+
+            <i class="icon_menu delete_xl"><i class="fas fa-bars"></i></i>
+
+            <div class="nav delete block_lg">
+                <ul class="reset">
+                    <li><a href="history.html">더본코리아</a>
+                        <ul class="sub">
+                            <li><a href="history.html">발자취</a></li>
+                            <li><a href="ceo.html">CEO 백종원</a></li>
+                            <li><a href="global.html">글로벌더본</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brand.html">브랜드</a>
+                        <ul class="sub">
+                            <li><a href="brand.html">대표 브랜드</a></li>
+                            <li><a href="testbrand.html">테스트 브랜드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="internal.html">매장찾기</a>
+                        <ul class="sub">
+                            <li><a href="internal.html">국내매장</a></li>
+                            <li><a href="foreign.html">해외매장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="step.html">창업안내</a>
+                        <ul class="sub">
+                            <li><a href="step.html">창업절차</a></li>
+                            <li><a href="policy.html">경영방침</a></li>
+                            <li><a href="briefing.html">창업설명회</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="inquiry.html">창업문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="event.html">더본이야기</a>
+                        <ul class="sub">
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="recipe.html">레시피</a></li>
+                            <li><a href="news.html">소식</a></li>
+                            <li><a href="recruit.html">채용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- .nav -->
+
+            <div class="menu delete_xl">
+                <h6><a href="index.html"><img src="images/logo_white.png" alt="더본코리아"></a><i
+                        class="fas fa-times icon_x"></i></h6>
+                <ul>
+                    <li>
+                        <p class="title">더본코리아<i class="fas fa-caret-down icon_arrow_text"></i></p>
+                        <ul class="sub">
+                            <li><a href="history.html">발자취</a></li>
+                            <li><a href="ceo.html">CEO 백종원</a></li>
+                            <li><a href="global.html">글로벌더본</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="title">브랜드<i class="fas fa-caret-down icon_arrow_text"></i></p>
+                        <ul class="sub">
+                            <li><a href="brand.html">대표 브랜드</a></li>
+                            <li><a href="testbrand.html">테스트 브랜드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="title">매장찾기<i class="fas fa-caret-down icon_arrow_text"></i></p>
+                        <ul class="sub">
+                            <li><a href="internal.html">국내매장</a></li>
+                            <li><a href="foreign.html">해외매장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="title">창업안내<i class="fas fa-caret-down icon_arrow_text on"></i></p> <!-- FIXME: -->
+                        <ul class="sub show">
+                            <li><a href="step.html" class="color2">창업절차</a></li> <!-- FIXME: -->
+                            <li><a href="policy.html">경영방침</a></li>
+                            <li><a href="briefing.html">창업설명회</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="inquiry.html">창업문의</a></li>
+                        </ul> <!-- FIXME: -->
+                    </li>
+                    <li>
+                        <p class="title">더본이야기<i class="fas fa-caret-down icon_arrow_text"></i></p>
+                        <ul class="sub">
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="recipe.html">레시피</a></li>
+                            <li><a href="news.html">소식</a></li>
+                            <li><a href="recruit.html">채용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- //.menu -->
+        </div>
+    </header> <!-- 헤더 -->
+
+    <div id="top" class="delete_xl background-black">
+        <div class="poto"></div>
+        <div class="name">창업절차</div>
+    </div> <!-- 모바일,탭 #top -->
+
+    <div id="list" class="delete block_lg">
+        <div class="title">
+            <p>창업안내</p>
+        </div>
+        <div class="contents">
+            <ul class="grid reset">
+                <a href="step.html">
+                    <li class="background-color2">창업절차</li> <!-- FIXME: -->
+                </a>
+                <a href="policy.html">
+                    <li>경영방침</li>
+                </a>
+                <a href="briefing.html">
+                    <li>창업설명회</li>
+                </a>
+                <a href="faq.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="inquiry.html">
+                    <li>창업문의</li>
+                </a>
+            </ul>
+        </div>
+    </div> <!-- 피시 #list 미니메뉴 -->
+
+    <div id="section">
+        <div class="grid reset">
+            <div class="title">
+                <div>
+                    <h2><span class="color2">더본코리아 브랜드 창업</span>을<br>희망하시는 예비점주님들께서는</h2>
+                    <h1 class="flex"><span class="f-shrink-0">1)</span>빠른 상담을 원하실 경우 외식브랜드(빽다방 제외)는 02-549-3864 으로 전화주시고 빽다방은 02-3447-0410 으로 전화주시면 바로 상담이 가능합니다.</h1>
+                    <h1 class="flex"><span class="f-shrink-0">2)</span>홈페이지 창업문의란에 희망지역 또는 후보점 정보를 남겨주시면 담당자가 확인 후 연락을 드립니다.</h1>
+                    <h1 class="flex"><span class="f-shrink-0">3)</span>창업설명회 일정 확인 후 신청 및 참석하여 주시면 보다 많은 정보와 도움을 받으실 수 있습니다.</h1>
+                </div>
+            </div>
+            <div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 01</p>
+                    <p><img src="images/icon__step-01.png" alt=""></p>
+                    <p>창업설명회 및 개별상담</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 02</p>
+                    <p><img src="images/icon__step-02.png" alt=""></p>
+                    <p>본사점주승인</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 03</p>
+                    <p><img src="images/icon__step-03.png" alt=""></p>
+                    <p>점포작업 및 본부확인</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 04</p>
+                    <p><img src="images/icon__step-04.png" alt=""></p>
+                    <p>점포개설 협의</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 05</p>
+                    <p><img src="images/icon__step-05.png" alt=""></p>
+                    <p>당사계약체결</p>
+                    <p>임대차 계약 이후<br>본사 가맹 계약 체결</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 06</p>
+                    <p><img src="images/icon__step-06.png" alt=""></p>
+                    <p>인테리어 및 시설공사</p>
+                    <p>약 3주~4주 현장 상황에<br>따라 변동가능</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 07</p>
+                    <p><img src="images/icon__step-07.png" alt=""></p>
+                    <p>교육</p>
+                    <p>점주 포함 최소 4~5명<br>(교육기간 1~2주)</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 08</p>
+                    <p><img src="images/icon__step-08.png" alt=""></p>
+                    <p>개점준비 & 가오픈</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 09</p>
+                    <p><img src="images/icon__step-09.png" alt=""></p>
+                    <p>오픈</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="wrap">
+                    <p>STEP 10</p>
+                    <p><img src="images/icon__step-10.png" alt=""></p>
+                    <p>사후관리</p>
+                    <p>점검팀 순회</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> <!-- #section -->
+
+    <footer>
+        <div class="grid reset">
+            <h6><a href="index.html"><img src="images/logo_black.png" alt="더본코리아"></a></h6>
+            <div class="container1">
+                <div class="box1">
+                    <a href="#">개인정보처리방침</a> <i class="l">·</i>
+                    <a href="#">상생경영</a> <i class="l">·</i>
+                    <a href="#">사이트맵</a> <i class="l">·</i>
+                    <a href="#">채용</a>
+                </div>
+                <div class="box2">
+                    <div class="wrap1">
+                        <p>상호명 : (주)더본코리아 <span class="l">·</span></p>
+                        <p>대표이사 : 백종원 <span class="l">·</span></p>
+                        <p>사업자등록번호 : 211-86-00870 <span class="l">·</span></p>
+                        <p>팩스 : 02-511-3864 <span class="l">·</span></p>
+                        <p>주소 : 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층</p>
+                    </div>
+                    <div class="wrap2">
+                        <p>본사 대표전화 : 02-549-3864 <span class="l">·</span></p>
+                        <p>고객센터 : 1544-2360 <span class="l">·</span></p>
+                        <p>가맹문의 : 02-549-3864 <span class="l">·</span></p>
+                        <p>제휴문의 : cs@theborn.co.kr <span class="l">·</span></p>
+                    </div>
+                    <hr>
+                    <p class="copyright">COPYRIGHTⓒ 2017 THEBORN KOREA INC. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+            <div class="container2">
+                <p><a href="https://www.youtube.com/channel/UCyn-K7rZLXjGl7VXGweIlcA" target="_blank"><img
+                            src="images/icon_youtube_01.png" alt=""></a></p>
+                <p><a href="https://post.naver.com/theborn_official" target="_blank"><img src="images/icon_naver_01.png"
+                            alt=""></a></p>
+                <select onChange="handle = window.open(this.value);handle.focus()">
+                    <option>FAMILY BRAND</option>
+                    <option value="http://newmaul.com/">새마을식당</option>
+                    <option value="http://ssambap.co.kr/">원조쌈밥집</option>
+                    <option value="http://paikdabang.com/">빽다방</option>
+                    <option value="http://zzambbong.com/">홍콩반점</option>
+                    <option value="http://www.bornga.co.kr/">본가</option>
+                    <option value="http://hanshinpocha.com/">한신포차</option>
+                    <option value="http://www.paiks-pan.com/">백철판</option>
+                    <option value="http://paiksbeer.com/">백스비어</option>
+                    <option value="http://dolbaegi.com/">돌배기집</option>
+                </select>
+            </div>
+        </div>
+    </footer> <!-- 푸터 -->
+
+
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/step_scroll.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT7sSTMO5sgyqu_1l0KuaIK_QAyv0U44c&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>
