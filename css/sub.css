@@ -6,1160 +6,1116 @@ header .menu .icon_arrow_text { .on }
 header .menu .sub { .show }
 header .menu .sub li { .color2 }
 
-.list .contents li { .background-color2 }
+#list .contents li { .background-color2 }
 */
 
 /* 변경 */
 #history #top .poto,
 #ceo #top .poto {
-    background: url(../images/mb_thebone.png) center;
-    background-size: cover;
+  background: url(../images/mb_thebone.png) center;
+  background-size: cover;
 }
 #brand #top .poto {
-    background: url(../images/mb_brand.png) center;
-    background-size: cover;
-}
-#brand_single #top .poto {
-    background: url(../images/mb_brand.png) center;
-    background-size: cover;
+  background: url(../images/mb_brand.png) center;
+  background-size: cover;
 }
 #internal #top .poto {
-    background: url(../images/mb_brand.png) center;
-    background-size: cover;
+  background: url(../images/mb_brand.png) center;
+  background-size: cover;
 }
 #step #top .poto {
-    background: url(../images/mb_brand.png) center;
-    background-size: cover;
+  background: url(../images/mb_brand.png) center;
+  background-size: cover;
 }
 #event #top .poto {
-    background: url(../images/mb_brand.png) center;
-    background-size: cover;
+  background: url(../images/mb_brand.png) center;
+  background-size: cover;
 }
 /* 변경 */
 
+h1 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  word-break: keep-all;
+}
+h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 35px;
+  word-break: keep-all;
+}
+
 #top {
-    position: relative;
-    margin-top: 160px;
-    overflow: hidden;
+  position: relative;
+  margin-top: 160px;
+  overflow: hidden;
 }
 #top .poto {
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-    transition: all 0.3s;
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+  transition: all 0.3s;
 }
 #top .name {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    transform: translateY(-50%);
-    transition: all 0.3s;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: all 0.3s;
 }
 
 #history {
-    word-break: keep-all;
+  word-break: keep-all;
 }
-#history #section {
-    position: relative;
-    width: 86%;
-    margin: 50px 20px;
-    overflow: hidden;
+#history section {
+  position: relative;
+  width: 86%;
+  margin: 50px 20px;
+  overflow: hidden;
 }
-#history #section .line {
-    background: rgb(5, 15, 145);
+#history section .line {
+  background: rgb(5, 15, 145);
 }
-#history #section .vertical {
-    position: absolute;
-    width: 3px;
-    height: 9252px;
-    top: 15px;
-    left: 0;
+#history section .vertical {
+  position: absolute;
+  width: 3px;
+  height: 9252px;
+  top: 15px;
+  left: 0;
 }
-#history #section .box {
-    overflow: hidden;
-    margin: 0 0 50px;
+#history section .box {
+  overflow: hidden;
+  margin: 0 0 50px;
 }
-#history #section .wrap1 {
-    position: relative;
-    overflow: hidden;
+#history section .wrap1 {
+  position: relative;
+  overflow: hidden;
 }
-#history #section .year {
-    position: relative;
-    width: 75%;
-    top: 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(5, 15, 145);
+#history section .year {
+  position: relative;
+  width: 75%;
+  top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(5, 15, 145);
 }
-#history #section .horizontal {
-    position: absolute;
-    width: 20%;
-    height: 2px;
-    top: 50%;
+#history section .horizontal {
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  top: 50%;
 }
-#history #section .content {
-    position: relative;
-    overflow: hidden;
+#history section .content {
+  position: relative;
+  overflow: hidden;
 }
-#history #section .wrap2 {
-    position: relative;
-    width: 75%;
-    top: 0;
-    margin: 20px 0;
+#history section .wrap2 {
+  position: relative;
+  width: 75%;
+  top: 0;
+  margin: 20px 0;
 }
-#history #section .month {
-    font-weight: bold;
-    margin-bottom: 10px;
+#history section .month {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-#history #section .text {
-    margin-bottom: 10px;
-    line-height: 20px;
+#history section .text {
+  margin-bottom: 10px;
+  line-height: 20px;
 }
-#history #section .poto {
-    position: relative;
-    width: 75%;
-    padding-top: 60%;
-    top: 0;
-    margin: 20px 0;
+#history section .poto {
+  position: relative;
+  width: 75%;
+  padding-top: 60%;
+  top: 0;
+  margin: 20px 0;
 }
-#history #section .box:nth-child(2) .poto {
-    background: url(../images/1993_1_ssambap.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(2) .poto {
+  background: url(../images/1993_1_ssambap.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(3) .poto {
-    background: url(../images/1998_1.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(3) .poto {
+  background: url(../images/1998_1.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(4) .poto {
-    background: url(../images/2002_1_bornga.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(4) .poto {
+  background: url(../images/2002_1_bornga.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(5) .poto {
-    background: url(../images/2004_1.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(5) .poto {
+  background: url(../images/2004_1.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(6) .poto:nth-child(5) {
-    background: url(../images/2005_1.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(6) .poto:nth-child(5) {
+  background: url(../images/2005_1.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(6) .poto:nth-child(6) {
-    background: url(../images/2005_4_bongachina.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(6) .poto:nth-child(6) {
+  background: url(../images/2005_4_bongachina.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(7) .poto:nth-child(4) {
-    background: url(../images/2006_01.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(7) .poto:nth-child(4) {
+  background: url(../images/2006_01.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(7) .poto:nth-child(5) {
-    background: url(../images/2006_02_hongkong_1.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(7) .poto:nth-child(5) {
+  background: url(../images/2006_02_hongkong_1.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(8) .poto {
-    background: url(../images/2008_1.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(8) .poto {
+  background: url(../images/2008_1.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(9) .poto:nth-child(4) {
-    background: url(../images/2009_1_paiksbeer.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(9) .poto:nth-child(4) {
+  background: url(../images/2009_1_paiksbeer.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(9) .poto:nth-child(5) {
-    background: url(../images/2009_2.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(9) .poto:nth-child(5) {
+  background: url(../images/2009_2.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(11) .poto {
-    background: url(../images/2011_1.png) center;
-    background-size: cover;
+#history section .box:nth-child(11) .poto {
+  background: url(../images/2011_1.png) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(12) .poto:nth-child(8) {
-    background: url(../images/2012_01.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(12) .poto:nth-child(8) {
+  background: url(../images/2012_01.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(12) .poto:nth-child(9) {
-    background: url(../images/2012_03_newmauljp.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(12) .poto:nth-child(9) {
+  background: url(../images/2012_03_newmauljp.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(13) .poto:nth-child(5) {
-    background: url(../images/2013_01_borngamal.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(13) .poto:nth-child(5) {
+  background: url(../images/2013_01_borngamal.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(13) .poto:nth-child(6) {
-    background: url(../images/2013_02.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(13) .poto:nth-child(6) {
+  background: url(../images/2013_02.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(14) .poto:nth-child(8) {
-    background: url(../images/2014_02_dolbaegi.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(14) .poto:nth-child(8) {
+  background: url(../images/2014_02_dolbaegi.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(14) .poto:nth-child(9) {
-    background: url(../images/2014_03_paikspan.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(14) .poto:nth-child(9) {
+  background: url(../images/2014_03_paikspan.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(15) .poto:nth-child(7) {
-    background: url(../images/2015_01_bongaex.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(15) .poto:nth-child(7) {
+  background: url(../images/2015_01_bongaex.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(15) .poto:nth-child(8) {
-    background: url(../images/2015_02_cichange.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(15) .poto:nth-child(8) {
+  background: url(../images/2015_02_cichange.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(15) .poto:nth-child(9) {
-    background: url(../images/2015_03.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(15) .poto:nth-child(9) {
+  background: url(../images/2015_03.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(16) .poto {
-    background: url(../images/2016_01_coffee.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(16) .poto {
+  background: url(../images/2016_01_coffee.jpg) center;
+  background-size: cover;
 }
-#history #section .box:nth-child(17) .poto {
-    background: url(../images/2017_01.jpg) center;
-    background-size: cover;
+#history section .box:nth-child(17) .poto {
+  background: url(../images/2017_01.jpg) center;
+  background-size: cover;
 }
 
-#ceo #section {
-    margin: 50px 20px 0;
-    word-break: keep-all;
+#ceo section {
+  margin-bottom: 0;
+  word-break: keep-all;
 }
-#ceo #section .box {
-    margin-bottom: 50px;
+#ceo section .box {
+  margin-bottom: 7vh;
 }
-#ceo #section h2 {
-    word-break: keep-all;
+#ceo section .sign {
+  margin-bottom: 14vh;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 30px;
 }
-#ceo #section .sign {
+#ceo section .sign img {
+  width: 150px;
+}
+#ceo section .bg {
+  width: 100vw;
+  height: 150px;
+  background: rgb(5, 15, 145);
+}
+#ceo section .bg .container {
+  position: relative;
+  height: 100%;
+}
+#ceo section .bg p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  color: rgba(5, 15, 245, 0.5);
+}
+#ceo section .bg img {
+  position: absolute;
+  height: 40vh;
+  bottom: 0;
+  right: 0;
+}
+
+#brand .gallery {
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+#brand section .title {
+  margin-bottom: 50px;
+}
+#brand section .box {
+  text-align: center;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+#brand section .box .poto {
+  width: 100%;
+}
+#brand section .box:nth-child(1) .poto {
+  background: url(../images/brand_main_01.png) center;
+  background-size: cover;
+}
+#brand section .box:nth-child(2) .poto {
+  background: url(../images/brand_main_02.jpg) center;
+  background-size: cover;
+}
+#brand section .box:nth-child(3) .poto {
+  background: url(../images/brand_main_03.png) center;
+  background-size: cover;
+}
+#brand section .box:nth-child(4) .poto {
+  background: url(../images/brand_main_04.jpg) center;
+  background-size: cover;
+}
+#brand section .box:nth-child(5) .poto {
+  background: url(../images/brand_main_05.jpg) center;
+  background-size: cover;
+}
+#brand section .box:nth-child(6) .poto {
+  background: url(../images/brand_main_06.jpg) center;
+  background-size: cover;
+}
+#brand section .box .logo {
+  height: 40px;
+  margin: 30px 0;
+}
+#brand section .box .logo img {
+  height: 100%;
+}
+#brand section .box .view {
+  margin: 0 0 30px;
+}
+
+#internal section .map {
+  width: 100%;
+  height: 80vw;
+}
+#internal section #map {
+  width: 100%;
+  height: 100%;
+}
+#internal section .search {
+  margin: 50px 0;
+}
+#internal section .form-location {
+  position: relative;
+  width: 100%;
+}
+#internal section .form-location:nth-child(1) {
+  float: left;
+  width: 48%;
+  margin: 0;
+}
+#internal section .form-location:nth-child(2) {
+  float: right;
+  width: 48%;
+  margin: 40px 0 0;
+}
+#internal section .form-location p {
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+#internal section .form-location .form-control {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+#internal section .form-control:focus {
+  outline: none;
+}
+#internal section .form-location:nth-child(5) .form-control {
+  padding: 0 45px 0 10px;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+#internal section .fa-search {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  font-size: 25px;
+  color: rgb(5, 15, 145);
+  line-height: 40px;
+}
+#internal section .list {
+  line-height: 50px;
+  text-align: center;
+}
+#internal section .list .title li {
+  float: left;
+  width: 33.3%;
+  font-weight: bold;
+  border-top: 3px solid rgb(5, 15, 145);
+  border-bottom: 1px solid rgb(5, 15, 145);
+}
+#internal section .list .contents .wrap {
+  cursor: pointer;
+}
+#internal section .list .contents .wrap:hover li {
+  background: #eee;
+}
+#internal section .list .contents li {
+  width: 33.3%;
+  float: left;
+  transition: all 0.3s;
+  border-bottom: 1px solid #ddd;
+}
+#internal section .list .contents .detail {
+  display: none;
+  padding: 20px 20px 10px;
+  background: #eee;
+  line-height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+#internal section .list .contents .detail .poto {
+  margin-bottom: 10px;
+}
+#internal section .list .contents ul:nth-child(1) .detail .poto {
+  background: url(../images/internal_01.png) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(2) .detail .poto {
+  background: url(../images/internal_02.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(3) .detail .poto {
+  background: url(../images/internal_03.png) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(4) .detail .poto {
+  background: url(../images/internal_04.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(5) .detail .poto {
+  background: url(../images/internal_05.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(6) .detail .poto {
+  background: url(../images/internal_06.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(7) .detail .poto {
+  background: url(../images/internal_07.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(8) .detail .poto {
+  background: url(../images/internal_08.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(9) .detail .poto {
+  background: url(../images/internal_09.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents ul:nth-child(10) .detail .poto {
+  background: url(../images/internal_10.jpg) center;
+  background-size: cover;
+}
+#internal section .list .contents .detail .text p {
+  float: left;
+}
+#internal section .list .contents .detail .text p:nth-child(2n + 1) {
+  width: 90px;
+  font-weight: bold;
+}
+#internal section .list .contents .detail .text p:nth-child(2n) {
+  width: calc(100% - 90px);
+}
+
+#step section .box {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+  border: 5px solid #eee;
+  text-align: center;
+}
+#step section .box .wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#step section .box img {
+  width: 100%;
+}
+#step section .box p:nth-child(2) {
+  width: 100px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ddd;
+  border-radius: 100%;
+}
+#step section .box p:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(5, 15, 145);
+}
+#step section .box p:nth-child(3) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#event section .box {
+  width: 100%;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+}
+#event section .box:nth-last-child(1) {
+  margin-bottom: 0;
+  border-bottom: 0px solid #ddd;
+}
+#event section .box:nth-child(1) .poto {
+  background: url(../images/event_bn_01_m.png);
+  background-size: cover;
+}
+#event section .box:nth-child(2) .poto {
+  background: url(../images/event_bn_02_m.png);
+  background-size: cover;
+}
+#event section .box:nth-child(3) .poto {
+  background: url(../images/event_bn_03_m.png);
+  background-size: cover;
+}
+#event section .box .text {
+  padding: 20px 0 50px;
+  text-align: center;
+}
+#event section .box:nth-last-child(1) .text {
+  padding: 20px 0 0;
+}
+#event section .box .logo img {
+  height: 20px;
+}
+#event section .box .text h1 {
+  margin: 5px 0;
+}
+#event section .box .text p {
+  color: #999;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    margin-bottom: 25px;
     font-size: 15px;
-    font-weight: bold;
     line-height: 30px;
-}
-#ceo #section .sign img {
-    width: 150px;
-}
-#ceo #section .bg {
-    position: relative;
-    width: 100vw;
-    height: 100px;
-    right: 20px;
-    background: rgb(5, 15, 145);
-    z-index: -1;
-}
-#ceo #section .bg p {
-    position: absolute;
-    top: 50%;
-    right: 50vw;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(5, 15, 245, 0.5);
-}
-#ceo #section .bg img {
-    position: absolute;
-    width: 50vw;
-    bottom: 0;
-    right: 0;
-}
-
-#brand #section {
-    margin: 50px 0;
-}
-#brand #section .title {
-    margin: 50px 20px;
-    word-break: keep-all;
-}
-#brand #section .title h2 span:nth-child(5) {
-    color: rgb(242, 179, 3);
-}
-#brand #section .box .poto {
-    width: 100%;
-}
-#brand #section .box:nth-child(1) .poto {
-    background: url(../images/brand_main_01.png) center;
-    background-size: cover;
-}
-#brand #section .box:nth-child(2) .poto {
-    background: url(../images/brand_main_02.jpg) center;
-    background-size: cover;
-}
-#brand #section .box:nth-child(3) .poto {
-    background: url(../images/brand_main_03.png) center;
-    background-size: cover;
-}
-#brand #section .box:nth-child(4) .poto {
-    background: url(../images/brand_main_04.jpg) center;
-    background-size: cover;
-}
-#brand #section .box:nth-child(5) .poto {
-    background: url(../images/brand_main_05.jpg) center;
-    background-size: cover;
-}
-#brand #section .box:nth-child(6) .poto {
-    background: url(../images/brand_main_06.jpg) center;
-    background-size: cover;
-}
-#brand #section .box .wrap {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-    background: #fff;
-    transition: all 0.5s;
-}
-#brand #section .box .logo {
-    text-align: center;
-}
-#brand #section .box .logo img {
-    height: 40px;
-    margin-bottom: 30px;
-}
-#brand #section .box .text h1 {
-    color: #999;
-}
-#brand #section .box .text a {
-    color: rgb(5, 15, 145);
-    transition: all 0.3s;
-}
-#brand #section .box .text a:hover {
-    color: #999;
-}
-
-#internal #section {
-    margin: 50px 0;
-}
-#internal #section .map {
-    width: 100%;
-    height: 300px;
-}
-#internal #section #map {
-    width: 100%;
-    height: 100%;
-}
-#internal #section .search {
-    margin: 50px 20px;
-}
-#internal #section .form-location {
-    position: relative;
-    width: 100%;
-    margin: 20px 0;
-}
-#internal #section .form-location:nth-child(1) {
-    float: left;
-    width: 48%;
-    margin: 0;
-}
-#internal #section .form-location:nth-child(2) {
-    float: right;
-    width: 48%;
-    margin: 40px 0 0;
-}
-#internal #section .form-location p {
-    margin: 10px 0;
-    font-size: 15px;
-    font-weight: bold;
-}
-#internal #section .form-location .form-control {
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    transition: all 0.3s;
-}
-#internal #section .form-control:focus {
-    outline: none;
-}
-#internal #section .form-location:nth-child(5) .form-control {
-    padding: 0 45px 0 10px;
-    border: none;
-    border-bottom: 1px solid #333;
-}
-#internal #section .fa-search {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0 10px;
+  }
+  h2 {
+    margin-bottom: 40px;
     font-size: 25px;
-    color: rgb(5, 15, 145);
-    line-height: 40px;
-}
-#internal #section .list {
-    margin: 50px 20px;
-    line-height: 50px;
-    text-align: center;
-}
-#internal #section .list .title li {
-    float: left;
-    width: 33.3%;
-    font-weight: bold;
-    border-top: 3px solid rgb(5, 15, 145);
-    border-bottom: 1px solid rgb(5, 15, 145);
-}
-#internal #section .list .contents .wrap {
-    cursor: pointer;
-}
-#internal #section .list .contents .wrap:hover li {
-    background: #eee;
-}
-#internal #section .list .contents li {
-    width: 33.3%;
-    float: left;
-    transition: all 0.3s;
-    border-bottom: 1px solid #ddd;
-}
-#internal #section .list .contents .detail {
-    display: none;
-    padding: 20px 20px 10px;
-    background: #eee;
-    line-height: 30px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-#internal #section .list .contents .detail .poto {
-    margin-bottom: 10px;
-}
-#internal #section .list .contents ul:nth-child(1) .detail .poto {
-    background: url(../images/internal_01.png) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(2) .detail .poto {
-    background: url(../images/internal_02.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(3) .detail .poto {
-    background: url(../images/internal_03.png) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(4) .detail .poto {
-    background: url(../images/internal_04.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(5) .detail .poto {
-    background: url(../images/internal_05.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(6) .detail .poto {
-    background: url(../images/internal_06.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(7) .detail .poto {
-    background: url(../images/internal_07.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(8) .detail .poto {
-    background: url(../images/internal_08.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(9) .detail .poto {
-    background: url(../images/internal_09.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents ul:nth-child(10) .detail .poto {
-    background: url(../images/internal_10.jpg) center;
-    background-size: cover;
-}
-#internal #section .list .contents .detail .text p {
-    float: left;
-}
-#internal #section .list .contents .detail .text p:nth-child(2n+1) {
-    width: 90px;
-    font-weight: bold;
-}
-#internal #section .list .contents .detail .text p:nth-child(2n) {
-    width: calc(100% - 90px);
-}
+    line-height: 45px;
+  }
 
-#step #section {
-    margin: 50px 20px;
-}
-#step #section .title {
-    
-}
-#step #section .box {
-    position: relative;
-    width: 100%;
-    margin: 50px 0;
-    border: 5px solid rgb(5, 15, 145);
-    text-align: center;
-    transition: all 0.5s;
-}
-#step #section .box::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-} /* 반응형 정사각형 */
-#step #section .box .wrap {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#step #section .box img {
-    width: 100%;
-}
-#step #section .box p:nth-child(2) {
-    width: 100px;
-    margin: 20px auto;
-    padding: 20px;
+  #ceo section .sign {
+    font-size: 16px;
+  }
+  #ceo section .bg {
+    height: 200px;
     background: rgb(5, 15, 145);
-    border-radius: 100%;
-}
-#step #section .box p:nth-child(1) {
-    font-weight: bold;
-    color: rgb(5, 15, 145);
-}
-#step #section .box p:nth-child(3) {
+  }
+  #ceo section .bg p {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #brand .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #brand section .title {
+    margin-bottom: 60px;
+  }
+  #brand section .box {
+    margin-bottom: 30px;
+  }
+
+  #internal section .search {
+    margin: 60px 0;
+  }
+
+  #step section .box {
+    float: left;
+    width: 48%;
+    margin: 4% 0 0 4%;
+  }
+  #step section .box:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+  #step section .box p:nth-child(1) {
+    font-size: 14px;
+  }
+  #step section .box p:nth-child(3) {
     font-size: 15px;
-    font-weight: bold;
+  }
 }
-#step #section .box p:nth-child(4) {
-    margin: 10px 0 0;
-    color: #999;
-    line-height: 20px;
-}
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 50px;
+  }
 
-#event #section {
-    margin: 50px 20px;
+  #top {
+    margin-top: 200px;
+  }
+  #top .poto {
+    height: 400px;
+  }
+  #top .name {
+    font-size: 40px;
+  }
+
+  #history section {
+    width: 700px;
+    height: 6560px;
+    margin: 100px auto;
+  }
+  #history section .vertical {
+    height: 5982px;
+    top: 20px;
+    left: 50%;
+  }
+  #history section .box {
+    position: relative;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    margin: 0;
+  }
+  #history section .box:nth-child(3) {
+    top: -200px;
+  }
+  #history section .box:nth-child(4) {
+    top: -300px;
+  }
+  #history section .box:nth-child(5) {
+    top: -450px;
+  }
+  #history section .box:nth-child(6) {
+    top: -550px;
+  }
+  #history section .box:nth-child(7) {
+    top: -1200px;
+  }
+  #history section .box:nth-child(8) {
+    top: -1200px;
+  }
+  #history section .box:nth-child(9) {
+    top: -1850px;
+  }
+  #history section .box:nth-child(10) {
+    top: -1850px;
+  }
+  #history section .box:nth-child(11) {
+    top: -1900px;
+  }
+  #history section .box:nth-child(12) {
+    top: -2200px;
+  }
+  #history section .box:nth-child(13) {
+    top: -2900px;
+  }
+  #history section .box:nth-child(14) {
+    top: -3000px;
+  }
+  #history section .box:nth-child(15) {
+    top: -4050px;
+  }
+  #history section .box:nth-child(16) {
+    top: -4200px;
+  }
+  #history section .box:nth-child(17) {
+    top: -4800px;
+  }
+  #history section .box:nth-child(2n) {
+    left: 0;
+    text-align: right;
+  }
+  #history section .year {
+    font-size: 30px;
+  }
+  #history section .box:nth-child(2n) .year {
+    left: 25%;
+  }
+  #history section .box:nth-child(2n) .horizontal {
+    left: 0;
+  }
+  #history section .wrap2 {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  #history section .box:nth-child(2n) .wrap2 {
+    left: 25%;
+  }
+
+  #ceo section .sign {
+    font-size: 17px;
+  }
+  #ceo section .sign img {
+    width: 200px;
+    margin-left: 20px;
+  }
+  #ceo section .bg {
+    height: 250px;
+  }
+  #ceo section .bg p {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #brand .gallery {
+    grid-gap: 20px;
+  }
+  #brand section .title {
+    margin-bottom: 70px;
+  }
+  #brand section .box {
+    margin-bottom: 40px;
+  }
+
+  #internal section .search {
+    margin: 70px 0;
+  }
+  #internal section .form-location:nth-child(2) {
+    margin: 60px 0 0;
+  }
+  #internal section .form-location p {
+    margin: 20px 0;
+  }
+  #internal section .form-location .form-control {
+    padding: 0 20px;
+  }
+  #internal section .form-location:nth-child(5) .form-control {
+    padding: 0 55px 0 20px;
+  }
+  #internal section .fa-search {
+    padding: 0 15px;
+  }
+  #internal section .list {
+    font-size: 15px;
+  }
+  #internal section .list .title li,
+  #internal section .list .contents li {
+    width: 15%;
+  }
+  #internal section .list .title li:nth-child(4),
+  #internal section .list .contents li:nth-child(4) {
+    width: 55%;
+  }
+  #internal section .list .contents .detail .wrap2 {
+    padding-left: 20px;
+  }
+  #internal section .list .contents .detail .text {
+    margin: 10px 0;
+  }
+
+  #step section .box {
+    width: 30%;
+    margin: 5% 0 0 5%;
+  }
+  #step section .box:nth-child(2n + 1) {
+    margin-left: 5%;
+  }
+  #step section .box:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  #step section .box p:nth-child(3) {
+    font-size: 15px;
+  }
+
+  #event section .box .poto::after {
+    padding-bottom: 25%;
+  }
+  #event section .box:nth-child(1) .poto {
+    background: url(../images/event_bn_01.png);
+    background-size: contain;
+  }
+  #event section .box:nth-child(2) .poto {
+    background: url(../images/event_bn_02.png);
+    background-size: contain;
+  }
+  #event section .box:nth-child(3) .poto {
+    background: url(../images/event_bn_03.png);
+    background-size: contain;
+  }
+  #event section .box .text {
+    padding: 30px 0;
+    text-align: left;
+  }
+  #event section .box .text p {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  #event section .box .logo img {
+    height: 25px;
+  }
+  #event section .box .text h1 {
+    line-height: 30px;
+  }
 }
-#event #section .box {
-    width: 100%;
-    margin: 30px 0;
-    border-bottom: 1px solid #ddd;
+@media (min-width: 992px) {
+  h1 {
+    font-size: 17px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 65px;
+  }
+
+  #brand .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #brand section .title {
+    margin-bottom: 80px;
+  }
+  #brand section .box {
+    margin-bottom: 50px;
+  }
+
+  #internal section .map {
+    height: 50vh;
+  }
+  #internal section .search {
+    margin: 80px 0;
+  }
+
 }
-#event #section .box .poto::after {
-    content: "";
-    display: block;
-    padding-top: 75%;
-}
-#event #section .box:nth-child(1) .poto {
-    background: url(../images/event_bn_01_m.png);
+@media (min-width: 1200px) {
+  /* 변경 */
+  #history #list .title,
+  #ceo #list .title {
+    background: url(../images/mb_thebone_p.png) center;
     background-size: cover;
-}
-#event #section .box:nth-child(2) .poto {
-    background: url(../images/event_bn_02_m.png);
+  }
+  #brand #list .title {
+    background: url(../images/mb_brand_p.png) center;
     background-size: cover;
-}
-#event #section .box:nth-child(3) .poto {
-    background: url(../images/event_bn_03_m.png);
+  }
+  #internal #list .title {
+    background: url(../images/mb_brand_p.png) center;
     background-size: cover;
-}
-#event #section .box .text {
-    padding: 20px 0;
+  }
+  #step #list .title {
+    background: url(../images/mb_brand_p.png) center;
+    background-size: cover;
+  }
+  #event #list .title {
+    background: url(../images/mb_brand_p.png) center;
+    background-size: cover;
+  }
+
+  #history #list .contents li {
+    width: 600px;
+  }
+  #ceo #list .contents li {
+    width: 600px;
+  }
+  #brand #list .contents li {
+    width: 600px;
+  }
+  #internal #list .contents li {
+    width: 600px;
+  }
+  #step #list .contents li {
+    width: 240px;
+  }
+  #event #list .contents li {
+    width: 300px;
+  }
+  /* 변경 */
+
+  h1 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  #list {
     text-align: center;
+    font-weight: bold;
+  }
+  #list .title {
+    height: 400px;
+    line-height: 500px;
+    overflow: hidden;
+  }
+  #list .title p {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+  }
+  #list .contents {
+    border-bottom: 1px solid #ddd;
+  }
+  #list .contents ul {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #list .contents li {
+    float: left;
+    height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 70px;
+    color: #333;
+    border-right: 1px solid #ddd;
+  }
+  #list .contents a:nth-child(1) li {
+    border-left: 1px solid #ddd;
+  }
+
+  #history section {
+    width: 1200px;
+    height: 9130px;
+  }
+  #history section .vertical {
+    height: 8402px;
+    top: 27px;
+  }
+  #history section .year {
+    font-size: 40px;
+  }
+  #history section .box:nth-child(2n) .year {
+    left: 0;
+  }
+  #history section .box:nth-child(2n) .horizontal {
+    left: 80%;
+  }
+  #history section .wrap2 {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #history section .box:nth-child(2n) .wrap2 {
+    left: 0;
+  }
+  #history section .box:nth-child(2n) .poto {
+    left: 0;
+  }
+  #history section .box:nth-child(3) {
+    top: -300px;
+  }
+  #history section .box:nth-child(4) {
+    top: -350px;
+  }
+  #history section .box:nth-child(5) {
+    top: -600px;
+  }
+  #history section .box:nth-child(6) {
+    top: -700px;
+  }
+  #history section .box:nth-child(7) {
+    top: -1550px;
+  }
+  #history section .box:nth-child(8) {
+    top: -1600px;
+  }
+  #history section .box:nth-child(9) {
+    top: -2200px;
+  }
+  #history section .box:nth-child(10) {
+    top: -2450px;
+  }
+  #history section .box:nth-child(11) {
+    top: -2200px;
+  }
+  #history section .box:nth-child(12) {
+    top: -2500px;
+  }
+  #history section .box:nth-child(13) {
+    top: -3400px;
+  }
+  #history section .box:nth-child(14) {
+    top: -3500px;
+  }
+  #history section .box:nth-child(15) {
+    top: -4700px;
+  }
+  #history section .box:nth-child(16) {
+    top: -5000px;
+  }
+  #history section .box:nth-child(17) {
+    top: -5500px;
+  }
+
+  #ceo section {
+    margin-top: 0;
+    background: linear-gradient(to right, rgb(5, 15, 145) 20%, transparent 20%);
+  }
+  #ceo section .box {
+    margin-bottom: 80px;
+  }
+  #ceo section .wrap {
+    order: 2;
+    margin-top: 90px;
+    margin-right: 0;
+  }
+  #ceo section .bg {
+    order: 1;
+  }
+  #ceo section .sign {
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
+  #ceo section .sign img {
+    width: 250px;
+  }
+  #ceo section .bg {
+    height: 1456px;
+  }
+  #ceo section .bg img {
+    height: 50%;
+    transform: translateX(30%);
+  }
+
+  #brand .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #brand section .title {
+    margin-bottom: 90px;
+  }
+  #brand section .box {
+    margin-bottom: 60px;
+  }
+
+  #internal section .map {
+    height: 700px;
+  }
+  #internal section .search {
+    margin: 100px 0;
+  }
+  #internal section .form-location {
+    float: left;
+    width: 22.5%;
+    margin: 0;
+    margin-left: 4%;
+  }
+  #internal section .form-location:nth-child(1) {
+    width: 22.5%;
+    margin-left: 0;
+  }
+  #internal section .form-location:nth-child(2) {
+    float: left;
+    width: 22.5%;
+    margin-left: 2%;
+  }
+  #internal section .form-location p {
+    margin: 20px 0;
+  }
+  #internal section .form-location .form-control {
+    padding: 0 20px;
+  }
+  #internal section .form-location:nth-child(5) .form-control {
+    padding: 0 55px 0 20px;
+  }
+  #internal section .fa-search {
+    padding: 0 15px;
+  }
+  #internal section .list {
+    margin: 100px 0;
+    line-height: 60px;
+  }
+  #internal section .list .title li,
+  #internal section .list .contents li {
+    width: 15%;
+  }
+  #internal section .list .title li:nth-child(4),
+  #internal section .list .contents li:nth-child(4) {
+    width: 40%;
+  }
+  #internal section .list .contents .detail {
+    padding: 30px;
+  }
+  #internal section .list .contents .detail .wrap2 {
+    padding: 30px 40px 30px;
+  }
+
+  #step section .box {
+    width: 23.5%;
+    margin: 2% 0 0 2%;
+  }
+  #step section .box:nth-child(2n + 1) {
+    margin-left: 2%;
+  }
+  #step section .box:nth-child(3n + 1) {
+    margin-left: 2%;
+  }
+  #step section .box:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+
+  #event section {
+    margin: 100px 0;
+  }
+  #event section .box .logo img {
+    height: 30px;
+  }
+  #event section .box .text p {
+    font-size: 17px;
+  }
 }
-#event #section .box .logo img {
-    height: 20px;
-}
-#event #section .box .text h1 {
-    margin: 5px 0;
-}
-#event #section .box .text p {
-    color: #999;
-}
-
-@media screen and (min-width: 768px) {
-    /* 태블릿 */
-
-    #top {
-        margin-top: 200px;
-    }
-    #top .poto {
-        height: 400px;
-    }
-    #top .name {
-        font-size: 40px;
-    }
-
-    #history #section {
-        width: 700px;
-        height: 6560px;
-        margin: 100px auto;
-    }
-    #history #section .vertical {
-        height: 5982px;
-        top: 20px;
-        left: 50%;
-    }
-    #history #section .box {
-        position: relative;
-        width: 50%;
-        top: 0;
-        left: 50%;
-        margin: 0;
-    }
-    #history #section .box:nth-child(3) {
-        top: -200px;
-    }
-    #history #section .box:nth-child(4) {
-        top: -300px;
-    }
-    #history #section .box:nth-child(5) {
-        top: -450px;
-    }
-    #history #section .box:nth-child(6) {
-        top: -550px;
-    }
-    #history #section .box:nth-child(7) {
-        top: -1200px;
-    }
-    #history #section .box:nth-child(8) {
-        top: -1200px;
-    }
-    #history #section .box:nth-child(9) {
-        top: -1850px;
-    }
-    #history #section .box:nth-child(10) {
-        top: -1850px;
-    }
-    #history #section .box:nth-child(11) {
-        top: -1900px;
-    }
-    #history #section .box:nth-child(12) {
-        top: -2200px;
-    }
-    #history #section .box:nth-child(13) {
-        top: -2900px;
-    }
-    #history #section .box:nth-child(14) {
-        top: -3000px;
-    }
-    #history #section .box:nth-child(15) {
-        top: -4050px;
-    }
-    #history #section .box:nth-child(16) {
-        top: -4200px;
-    }
-    #history #section .box:nth-child(17) {
-        top: -4800px;
-    }
-    #history #section .box:nth-child(2n) {
-        left: 0;
-        text-align: right;
-    }
-    #history #section .year {
-        font-size: 30px;
-    }
-    #history #section .box:nth-child(2n) .year {
-        left: 25%;
-    }
-    #history #section .box:nth-child(2n) .horizontal {
-        left: 0;
-    }
-    #history #section .wrap2 {
-        margin-top: 20px;
-        font-size: 15px;
-        line-height: 30px;
-    }
-    #history #section .box:nth-child(2n) .wrap2 {
-        left: 25%;
-    }
-
-    #ceo #section {
-        margin: 100px 40px 0;
-        line-height: 30px;
-    }
-    #ceo #section .box {
-        margin-bottom: 100px;
-    }
-    #ceo #section .box:nth-child(2) {
-        width: 60vw;
-    }
-    #ceo #section .sign {
-        font-size: 17px;
-    }
-    #ceo #section .sign img {
-        width: 200px;
-        top: -5px;
-        margin-left: 20px;
-    }
-    #ceo #section .bg {
-        height: 200px;
-        right: 40px;
-    }
-    #ceo #section .bg p {
-        font-size: 40px;
-        line-height: 60px;
-    }
-    #ceo #section .bg img {
-        width: 50vw;
-        bottom: 0;
-        right: 0;
-    }
-
-    #brand #section {
-        margin: 100px 0;
-    }
-    #brand #section .title {
-        margin: 100px 40px;
-    }
-    #brand #section .row {
-        margin: 0 40px;
-    }
-    #brand #section .box {
-        position: relative;
-    }
-    #brand #section .box .wrap {
-        position: static;
-        width: 100%;
-        margin: 0 auto 100px;
-    }
-    #brand #section .box .text h2 {
-        margin-bottom: 30px;
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #brand_single #section {
-        margin: 100px 0;
-    }
-    #brand_single #section .title {
-        margin: 100px 40px;
-    }
-    #brand_single #section .title .topic {
-        margin-bottom: 50px;
-        font-size: 30px;
-        line-height: 50px;
-    }
-    #brand_single #section .title .contents {
-        font-size: 20px;
-        line-height: 40px;
-    }
-    #brand_single #section .box {
-        height: 450px;
-        margin: 100px 0;
-    }
-    #brand_single #section .box .poto {
-        height: 400px;
-    }
-    #brand_single #section .box .text p {
-        margin: 20px auto;
-    }
-    #brand_single #section .box .text li {
-        margin: 20px 10px;
-    }
-    #brand_single #section .box .text .wrap2 span {
-        margin: 0 10px;
-    }
-
-    #internal #section {
-        margin: 100px 0;
-    }
-    #internal #section .map {
-        height: 500px;
-    }
-    #internal #section .search {
-        margin: 100px 40px;
-    }
-    #internal #section .form-location {
-        margin: 40px 0;
-    }
-    #internal #section .form-location:nth-child(2) {
-        margin: 60px 0 0;
-    }
-    #internal #section .form-location p {
-        margin: 20px 0;
-    }
-    #internal #section .form-location .form-control {
-        padding: 0 20px;
-    }
-    #internal #section .form-location:nth-child(5) .form-control {
-        padding: 0 55px 0 20px;
-    }
-    #internal #section .fa-search {
-        padding: 0 15px;
-    }
-    #internal #section .list {
-        margin: 100px 40px;
-        font-size: 15px;
-    }
-    #internal #section .list .title li,
-    #internal #section .list .contents li {
-        width: 15%;
-    }
-    #internal #section .list .title li:nth-child(4),
-    #internal #section .list .contents li:nth-child(4) {
-        width: 55%;
-    }
-    #internal #section .list .contents .detail .rectangle::after {
-        display: none;
-    }
-    #internal #section .list .contents .detail .poto {
-        margin-bottom: 0;
-    }
-    #internal #section .list .contents .detail .wrap2 {
-        padding: 20px;
-    }
-    #internal #section .list .contents .detail .text {
-        margin: 10px 0;
-    }
-
-    #step #section {
-        margin: 100px 40px;
-    }
-    #step #section .box {
-        float: left;
-        width: 48%;
-        margin: 4% 0 0 4%;
-    }
-    #step #section .box:nth-child(2n + 1) {
-        margin-left: 0;
-    }
-    #step #section .box p:nth-child(1) {
-        font-size: 15px;
-    }
-    #step #section .box p:nth-child(3) {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    #step #section .box p:nth-child(4) {
-        margin: 20px 0 0;
-        font-size: 15px;
-        color: #999;
-        line-height: 20px;
-    }
-
-    #event #section {
-        margin: 100px 40px;
-    }
-    #event #section .box {
-        margin: 40px 0;
-    }
-    #event #section .box .poto::after {
-        padding-top: 25%;
-    }
-    #event #section .box:nth-child(1) .poto {
-        background: url(../images/event_bn_01.png);
-        background-size: contain;
-    }
-    #event #section .box:nth-child(2) .poto {
-        background: url(../images/event_bn_02.png);
-        background-size: contain;
-    }
-    #event #section .box:nth-child(3) .poto {
-        background: url(../images/event_bn_03.png);
-        background-size: contain;
-    }
-    #event #section .box .text {
-        padding: 30px 0;
-        text-align: left;
-    }
-    #event #section .box .text p {
-        font-size: 15px;
-        line-height: 40px;
-    }
-    #event #section .box .logo img {
-        height: 25px;
-    }
-    #event #section .box .text h1  {
-        line-height: 30px;
-    }
-    #event #section .box .text p:nth-child(3) {
-        text-align: right;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    /* 피시 변경 */
-    #history #list .title,
-    #ceo #list .title {
-        background: url(../images/mb_thebone_p.png) center;
-        background-size: cover;
-    }
-    #history #list .contents li,
-    #ceo #list .contents li {
-        width: 400px;
-    }
-
-    #brand #list .title {
-        background: url(../images/mb_brand_p.png) center;
-        background-size: cover;
-    }
-    #brand #list .contents li {
-        width: 600px;
-    }
-
-    #brand_single #list .title {
-        background: url(../images/mb_brand_p.png) center;
-        background-size: cover;
-    }
-    #brand_single #list .contents li {
-        width: 600px;
-    }
-
-    #internal #list .title {
-        background: url(../images/mb_brand_p.png) center;
-        background-size: cover;
-    }
-    #internal #list .contents li {
-        width: 600px;
-    }
-
-    #step #list .title {
-        background: url(../images/mb_brand_p.png) center;
-        background-size: cover;
-    }
-    #step #list .contents li {
-        width: 240px;
-    }
-
-    #event #list .title {
-        background: url(../images/mb_brand_p.png) center;
-        background-size: cover;
-    }
-    #event #list .contents li {
-        width: 300px;
-    }
-    /* 피시 변경 */
-
-    #list {
-        text-align: center;
-        font-weight: bold;
-    }
-    #list .title {
-        height: 400px;
-        line-height: 500px;
-        overflow: hidden;
-    }
-    #list .title p {
-        font-size: 40px;
-        color: #fff;
-        text-shadow: 0 0 5px #000;
-    }
-    #list .contents {
-        border-bottom: 1px solid #ddd;
-    }
-    #list .contents li {
-        float: left;
-        height: 70px;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 70px;
-        color: #333;
-        border-right: 1px solid #ddd;
-    }
-    #list .contents a:nth-child(1) li {
-        border-left: 1px solid #ddd;
-    }
-
-    #history #section {
-        width: 1200px;
-        height: 9130px;
-    }
-    #history #section .vertical {
-        height: 8402px;
-        top: 27px;
-    }
-    #history #section .year {
-        font-size: 40px;
-    }
-    #history #section .box:nth-child(2n) .year {
-        left: 0;
-    }
-    #history #section .box:nth-child(2n) .horizontal {
-        left: 80%;
-    }
-    #history #section .wrap2 {
-        margin-top: 20px;
-        font-size: 16px;
-        line-height: 30px;
-    }
-    #history #section .box:nth-child(2n) .wrap2 {
-        left: 0;
-    }
-    #history #section .box:nth-child(2n) .poto {
-        left: 0;
-    }
-    #history #section .box:nth-child(3) {
-        top: -300px;
-    }
-    #history #section .box:nth-child(4) {
-        top: -350px;
-    }
-    #history #section .box:nth-child(5) {
-        top: -600px;
-    }
-    #history #section .box:nth-child(6) {
-        top: -700px;
-    }
-    #history #section .box:nth-child(7) {
-        top: -1550px;
-    }
-    #history #section .box:nth-child(8) {
-        top: -1600px;
-    }
-    #history #section .box:nth-child(9) {
-        top: -2200px;
-    }
-    #history #section .box:nth-child(10) {
-        top: -2450px;
-    }
-    #history #section .box:nth-child(11) {
-        top: -2200px;
-    }
-    #history #section .box:nth-child(12) {
-        top: -2500px;
-    }
-    #history #section .box:nth-child(13) {
-        top: -3400px;
-    }
-    #history #section .box:nth-child(14) {
-        top: -3500px;
-    }
-    #history #section .box:nth-child(15) {
-        top: -4700px;
-    }
-    #history #section .box:nth-child(16) {
-        top: -5000px;
-    }
-    #history #section .box:nth-child(17) {
-        top: -5500px;
-    }
-
-    #ceo #section {
-        position: relative;
-        height: 1600px;
-        margin: 100px 0 0;
-        word-break: keep-all;
-    }
-    #ceo #section .grid {
-        position: relative;
-    }
-    #ceo #section .wrap {
-        position: absolute;
-        width: 700px;
-        top: 0;
-        right: 0;
-    }
-    #ceo #section .box:nth-child(2) {
-        width: auto;
-    }
-    #ceo #section .sign {
-        font-size: 20px;
-    }
-    #ceo #section .sign img {
-        width: 250px;
-        top: -7px;
-    }
-    #ceo #section .bg {
-        position: absolute;
-        width: 1000px;
-        height: 1750px;
-        top: -100px;
-        right: 800px;
-    }
-    #ceo #section .bg p {
-        top: 800px;
-        right: 50px;
-        transform: translateY(0);
-        font-size: 50px;
-        line-height: 70px;
-    }
-    #ceo #section .bg img {
-        width: 500px;
-        right: -100px;
-    }
-
-    #brand #section .title {
-        margin: 100px 0;
-    }
-    #brand #section .row {
-        margin: 0;
-    }
-    #brand #section .box .text h1 {
-        margin-bottom: 25px;
-        font-size: 17px;
-        line-height: 34px;
-    }
-    #brand #section .box .text h2 {
-        margin-bottom: 30px;
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #brand_single #section .title {
-        margin: 100px 0;
-    }
-    #brand_single #section .box {
-        height: 650px;
-        margin: 100px 0;
-    }
-    #brand_single #section .box .poto {
-        height: 600px;
-    }
-    #brand_single #section .box .text p {
-        margin: 20px auto;
-    }
-
-    #internal #section .map {
-        height: 700px;
-    }
-    #internal #section .search {
-        margin: 100px 0;
-    }
-    #internal #section .form-location {
-        float: left;
-        width: 22.5%;
-        margin: 0;
-        margin-left: 4%;
-    }
-    #internal #section .form-location:nth-child(1) {
-        width: 22.5%;
-        margin-left: 0;
-    }
-    #internal #section .form-location:nth-child(2) {
-        float: left;
-        width: 22.5%;
-        margin-left: 2%;
-    }
-    #internal #section .form-location p {
-        margin: 20px 0;
-    }
-    #internal #section .form-location .form-control {
-        padding: 0 20px;
-    }
-    #internal #section .form-location:nth-child(5) .form-control {
-        padding: 0 55px 0 20px;
-    }
-    #internal #section .fa-search {
-        padding: 0 15px;
-    }
-    #internal #section .list {
-        margin: 100px 0;
-        line-height: 60px;
-    }
-    #internal #section .list .title li,
-    #internal #section .list .contents li {
-        width: 15%;
-    }
-    #internal #section .list .title li:nth-child(4),
-    #internal #section .list .contents li:nth-child(4) {
-        width: 40%;
-    }
-    #internal #section .list .contents .detail {
-        padding: 30px;
-    }
-    #internal #section .list .contents .detail .wrap2 {
-        padding: 30px 40px 30px;
-    }
-
-    #step #section .box {
-        float: left;
-        width: 23.5%;
-        margin: 2% 0 0 2%;
-    }
-    #step #section .box:nth-child(2n + 1) {
-        margin-left: 2%;
-    }
-    #step #section .box:nth-child(4n + 1) {
-        margin-left: 0;
-    }
-    #event #section {
-        margin: 100px 0;
-    }
-    #event #section .box .logo img {
-        height: 30px;
-    }
-    #event #section .box .text p {
-        font-size: 17px;
-    }
+@media (min-width: 1400px) {
+  #step section .box {
+    width: 18%;
+    margin: 2.5% 0 0 2.5%;
+  }
+  #step section .box:nth-child(2n + 1) {
+    margin-left: 2.5%;
+  }
+  #step section .box:nth-child(3n + 1) {
+    margin-left: 2.5%;
+  }
+  #step section .box:nth-child(4n + 1) {
+    margin-left: 2.5%;
+  }
+  #step section .box:nth-child(5n + 1) {
+    margin-left: 0;
+  }
 }

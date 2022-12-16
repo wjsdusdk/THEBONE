@@ -29,13 +29,17 @@ section {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.container,
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
 .container-full {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-.container-xxl,
+/* .container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -43,19 +47,7 @@ section {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-}
-h1 {
-  font-size: 13px;
-  font-weight: normal;
-  font-style: italic;
-  color: rgb(5, 14, 145);
-  word-break: keep-all;
-}
-h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  word-break: keep-all;
-}
+} */
 
 .row {
   display: -webkit-box;
@@ -138,6 +130,9 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
 }
+.align-self-center {
+  align-self: center !important;
+}
 .f-shrink-0 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -150,6 +145,12 @@ h2 {
 
 .scroll {
   position: relative;
+  top: 100px;
+  opacity: 0;
+}
+.scroll:nth-child(1) {
+  top: 0 !important;
+  opacity: 1 !important;
 }
 .reset:after {
   content: "";
@@ -164,10 +165,7 @@ h2 {
 }
 .view {
   display: inline-block;
-  width: 120px;
-  height: 35px;
-  margin-bottom: 20px;
-  line-height: 35px;
+  padding: 10px 15px;
   color: #fff;
   background: rgb(5, 14, 145);
   text-align: center;
@@ -180,7 +178,7 @@ h2 {
 .rectangle::after {
   content: "";
   display: block;
-  padding-bottom: 70%;
+  padding-bottom: 75%;
 }
 .square {
   background-size: cover;
@@ -245,17 +243,27 @@ h2 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .container-sm,
-  .container {
+  .container,
+  .container-sm {
     max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  h1 {
-    margin-bottom: 5px;
-    font-size: 14px;
+  .flex_sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  h2 {
-    margin-bottom: 30px;
-    font-size: 21px;
+  .col-48_sm {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .jc-between_sm {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .grid_sm {
     display: grid;
@@ -281,14 +289,8 @@ h2 {
   .container-sm,
   .container {
     max-width: 720px;
-  }
-  h1 {
-    margin-bottom: 5px;
-    font-size: 15px;
-  }
-  h2 {
-    margin-bottom: 40px;
-    font-size: 22px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .delete_md {
     display: none;
@@ -304,8 +306,30 @@ h2 {
   .color {
     font-size: 22px;
   }
+  .flex_md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .grid_md {
     display: grid;
+  }
+  .col-40_md {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .col-60_md {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }.col-100_md {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -318,6 +342,8 @@ h2 {
   .container-sm,
   .container {
     max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .flex_lg {
     display: -webkit-box;
@@ -357,6 +383,13 @@ h2 {
   .container-sm,
   .container {
     max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .flex_xl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .grid_xl {
     display: grid;
@@ -367,11 +400,23 @@ h2 {
   .block_xl {
     display: block;
   }
+  .col-32_xl {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
   .col-40_xl {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     max-width: 40%;
+  }
+  .col-50_xl {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .col-55_xl {
     -webkit-box-flex: 0;
@@ -392,6 +437,8 @@ h2 {
   .container-sm,
   .container {
     max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .grid_xxl {
     display: grid;
