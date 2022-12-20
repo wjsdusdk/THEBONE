@@ -221,11 +221,11 @@ $(document).ready(function () {
     var scrollTop = $(this).scrollTop();
 
     if (scrollTop >= 50) {
-      $("#top .poto").css({
+      $("#top .photo").css({
         opacity: "1",
       });
     } else {
-      $("#top .poto").css({
+      $("#top .photo").css({
         opacity: "0.5",
       });
     }
@@ -235,11 +235,11 @@ $(document).ready(function () {
       var scrollTop = $(this).scrollTop();
 
       if (scrollTop >= 50) {
-        $("#top .poto").css({
+        $("#top .photo").css({
           opacity: "1",
         });
       } else {
-        $("#top .poto").css({
+        $("#top .photo").css({
           opacity: "0.5",
         });
       }
