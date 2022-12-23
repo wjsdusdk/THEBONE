@@ -11,7 +11,7 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
-<body id="step">
+<body>
   <header>
     <div class="container-xl reset">
       <div class="wrap">
@@ -19,10 +19,10 @@
         <div class="list delete_xl">
           <ul>
             <li>
-              <p><span>창업절차 <i class="fas fa-caret-down icon_arrow_text"></i></span></p>
+              <p><span>창업문의 <i class="fas fa-caret-down icon_arrow_text"></i></span></p>
               <ul class="reset">
                 <a href="step.html">
-                  <li class="bold color1">창업절차</li> <!-- 변경 -->
+                  <li>창업절차</li>
                 </a>
                 <a href="briefing.html">
                   <li>창업설명회</li>
@@ -31,7 +31,7 @@
                   <li>FAQ</li>
                 </a>
                 <a href="inquiry.html">
-                  <li>창업문의</li>
+                  <li class="bold color1">창업문의</li> <!-- 변경 -->
                 </a>
               </ul>
             </li>
@@ -107,10 +107,10 @@
           <li>
             <p class="title">창업안내<i class="fas fa-caret-down icon_arrow_text on"></i></p> <!-- 변경 -->
             <ul class="sub show"> <!-- 변경 -->
-              <li><a href="step.html" class="color2">창업절차</a></li> <!-- 변경 -->
+              <li><a href="step.html">창업절차</a></li>
               <li><a href="briefing.html">창업설명회</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="inquiry.html">창업문의</a></li>
+              <li><a href="inquiry.html" class="color2">창업문의</a></li> <!-- 변경 -->
             </ul>
           </li>
           <li>
@@ -118,7 +118,7 @@
             <ul class="sub">
               <li><a href="event.html">이벤트</a></li>
               <li><a href="recipe.html">레시피</a></li>
-              <li><a href="news.html">소식</a></li>ㅉ
+              <li><a href="news.html">소식</a></li>
             </ul>
           </li>
         </ul>
@@ -126,19 +126,19 @@
     </div>
   </header>
 
-  <div id="top" class="delete_xl background-black">
+  <div id="inquiryTop" class="subTop delete_xl background-black">
     <div class="photo"></div>
-    <div class="name">창업절차</div>
+    <div class="name">창업문의</div>
   </div>
 
-  <div id="list" class="delete block_xl">
+  <div id="inquiryList" class="subList delete block_xl">
     <div class="title">
       <p>창업안내</p>
     </div>
     <div class="contents">
       <ul class="reset">
         <a href="step.html">
-          <li class="background-color2">창업절차</li> <!-- 변경 -->
+          <li>창업절차</li>
         </a>
         <a href="briefing.html">
           <li>창업설명회</li>
@@ -147,94 +147,76 @@
           <li>FAQ</li>
         </a>
         <a href="inquiry.html">
-          <li>창업문의</li>
+          <li class="background-color2">창업문의</li> <!-- 변경 -->
         </a>
       </ul>
     </div>
   </div>
 
-  <section>
+  <section id="inquiry">
     <div class="container">
-      <div class="title">
-        <div>
-          <h2><span class="color2">더본코리아 브랜드 창업</span>을<br>희망하시는 예비점주님들께서는</h2>
-          <h1 class="flex"><span class="f-shrink-0">1)</span>빠른 상담을 원하실 경우 외식브랜드(빽다방 제외)는 02-549-3864 으로 전화주시고 빽다방은
-            02-3447-0410 으로 전화주시면 바로 상담이 가능합니다.</h1>
-          <h1 class="flex"><span class="f-shrink-0">2)</span>홈페이지 창업문의란에 희망지역 또는 후보점 정보를 남겨주시면 담당자가 확인 후 연락을 드립니다.</h1>
-          <h1 class="flex"><span class="f-shrink-0">3)</span>창업설명회 일정 확인 후 신청 및 참석하여 주시면 보다 많은 정보와 도움을 받으실 수 있습니다.</h1>
+      <div class="reset">
+        <div class="form-box reset">
+          <p>브랜드 선택 <span class="red">*</span></p>
+          <select class="form-control" onchange="foundationKindChange(this)">
+            <option value="국가">국가 선택</option>
+            <option value="국내">국내</option>
+            <option value="해외">해외</option>
+          </select>
+          <select class="form-control" id="foundation2" name="foundation2">
+            <option>브랜드 선택</option>
+          </select>
+        </div>
+        <div class="form-box reset">
+          <p>이름 <span class="red">*</span></p>
+          <input type="text" placeholder="" class="form-control">
+        </div>
+        <div class="form-box reset">
+          <p>휴대폰 번호 <span class="red">*</span></p>
+          <select name="cellphone1" id="cellphone1" class="form-control">
+            <option value="" disabled>선택</option>
+            <option value="010" selected>010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+          <input type="number" pattern="[0-9]" id="cellphone2" class="form-control" name="cellphone2" required=""
+            maxlength="4">
+          <input type="number" pattern="[0-9]" id="cellphone3" class="form-control" name="cellphone3" required=""
+            maxlength="4">
+        </div>
+        <div class="form-box reset">
+          <p>이메일 <span class="red">*</span></p>
+          <input type="text" name="email1" id="email1" class="form-control" value="">
+          <p> @ </p>
+          <input type="text" name="email2" id="email2" class="form-control" value="">
+        </div>
+        <div class="form-box reset">
+          <p>창업희망지역 <span class="red">*</span></p>
+          <select class="form-control" onchange="foundationKindChange(this)">
+            <option value="국가">국가 선택</option>
+            <option value="국내">국내</option>
+            <option value="해외">해외</option>
+          </select>
+          <select class="form-control" id="foundation2" name="foundation2">
+            <option>브랜드 선택</option>
+          </select>
+        </div>
+        <div class="form-box reset">
+          <p>입점희망 점포 <span class="red">*</span></p>
+          <input type="text" placeholder="" class="form-control">
+        </div>
+        <div class="form-box reset">
+          <p>추가 정보 입력</p>
+          <textarea cols="30" rows="6" name="addinfo" class="form-control"
+            placeholder="점포를 보유하셨거나 입점희망 점포에 대한 사전정보가 있을 경우, 점포의 평수/임대료 등 구체적인 정보를 남겨주시면 조금 더 정확한 상담이 가능합니다. 그 외, 추가문의 사항이 있는 경우 남겨주세요!"></textarea>
         </div>
       </div>
-      <div class="reset">
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 01</p>
-            <p><img src="images/icon__step-01.png" alt="step01"></p>
-            <p>창업설명회 및 개별상담</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 02</p>
-            <p><img src="images/icon__step-02.png" alt="step02"></p>
-            <p>본사점주승인</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 03</p>
-            <p><img src="images/icon__step-03.png" alt="step03"></p>
-            <p>점포작업 및 본부확인</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 04</p>
-            <p><img src="images/icon__step-04.png" alt="step04"></p>
-            <p>점포개설 협의</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 05</p>
-            <p><img src="images/icon__step-05.png" alt="step05"></p>
-            <p>당사계약체결</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 06</p>
-            <p><img src="images/icon__step-06.png" alt="step06"></p>
-            <p>인테리어 및 시설공사</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 07</p>
-            <p><img src="images/icon__step-07.png" alt="step07"></p>
-            <p>교육</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 08</p>
-            <p><img src="images/icon__step-08.png" alt="step08"></p>
-            <p>개점준비 & 가오픈</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 09</p>
-            <p><img src="images/icon__step-09.png" alt="step09"></p>
-            <p>오픈</p>
-          </div>
-        </div>
-        <div class="box square scroll">
-          <div class="wrap">
-            <p>STEP 10</p>
-            <p><img src="images/icon__step-10.png" alt="step10"></p>
-            <p>사후관리</p>
-          </div>
-        </div>
+      <div class="btn flex jc-center">
+        <p>문의 등록</p>
+        <p>취소</p>
       </div>
     </div>
   </section>
@@ -291,6 +273,7 @@
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
   <script src="js/step_scroll.js"></script>
   <script

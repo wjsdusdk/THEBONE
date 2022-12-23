@@ -22,7 +22,7 @@
   </script>
 </head>
 
-<body id="internal">
+<body>
   <header>
     <div class="container-xl reset">
       <div class="wrap">
@@ -131,12 +131,12 @@
     </div>
   </header>
 
-  <div id="top" class="delete_xl background-black">
+  <div id="internalTop" class="subTop delete_xl background-black">
     <div class="photo"></div>
     <div class="name">국내매장</div>
   </div>
 
-  <div id="list" class="delete block_xl">
+  <div id="internalList" class="subList delete block_xl">
     <div class="title">
       <p>매장찾기</p>
     </div>
@@ -152,15 +152,15 @@
     </div>
   </div>
 
-  <section>
+  <section id="internal">
     <div class="container">
       <div class="map">
         <div id="map"></div>
       </div>
       <div class="search reset">
-        <div class="form-location">
+        <div class="form-box">
           <p>지역</p>
-          <select class="form-control" id="location1" name="address1" onchange="locationKindChange(this)">
+          <select class="form-control" id="location1" name="location1" onchange="locationKindChange(this)">
             <option value="시/도">시/도</option>
             <option value="서울특별시">서울특별시</option>
             <option value="부산광역시">부산광역시</option>
@@ -181,15 +181,15 @@
             <option value="세종특별자치시">세종특별자치시</option>
           </select>
         </div>
-        <div class="form-location">
+        <div class="form-box">
           <select class="form-control" id="location2" name="location2">
             <option>시/군/구</option>
           </select>
         </div>
         <hr class="delete_xl">
-        <div class="form-location">
+        <div class="form-box">
           <p>브랜드</p>
-          <select class="form-control" name="age" id="userAge">
+          <select class="form-control" name="brand" id="brand">
             <option>브랜드</option>
             <option value="인생설렁탕">인생설렁탕</option>
             <option value="롤링파스타">롤링파스타</option>
@@ -211,7 +211,7 @@
             <option value="리춘시장">리춘시장</option>
           </select>
         </div>
-        <div class="form-location">
+        <div class="form-box">
           <p>매장명</p>
           <input type="text" placeholder="매장명" class="form-control">
           <a href="javascript:void(0);"><i class="fas fa-search"></i></a>
@@ -229,14 +229,14 @@
         </div>
         <div class="contents">
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>역전우동</li>
               <li>서울특별시</li>
               <li>신림난곡점</li>
               <li class="delete block_md">서울 관악구 신림동 617-1</li>
               <li class="delete block_xl">02-838-6863</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -269,14 +269,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>한신포차</li>
               <li>경기도</li>
               <li>양평시장점</li>
               <li class="delete block_md">경기도 양평군 양평읍 양평시장길 28, 가동 2층</li>
               <li class="delete block_xl">070-4647-1083</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -309,14 +309,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>막이오름</li>
               <li>부산광역시</li>
               <li>부산동래점</li>
               <li class="delete block_md">부산광역시 동래구 명륜로 139번길 35 2층 (명륜동)</li>
               <li class="delete block_xl">053-553-3222</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -349,14 +349,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>빽다방</li>
               <li>대구광역시</li>
               <li>대구칠곡점</li>
               <li class="delete block_md">대구광역시 북구 칠곡중앙대로 638</li>
               <li class="delete block_xl">070-7543-6519</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -389,14 +389,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>새마을식당</li>
               <li>부산광역시</li>
               <li>부산장산점</li>
               <li class="delete block_md">부산광역시 해운대구 세실로 27번길 23 2층</li>
               <li class="delete block_xl">051-702-9630</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -429,14 +429,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>빽다방</li>
               <li>서울특별시</li>
               <li>가오리역점</li>
               <li class="delete block_md">서울특별시 강북구 수유동 339-6</li>
               <li class="delete block_xl">02-991-0037</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -469,14 +469,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>홍콩반점</li>
               <li>서울특별시</li>
               <li>관악난곡점</li>
               <li class="delete block_md">서울특별시 관악구 난우길 20, 2층</li>
               <li class="delete block_xl">02-864-0410</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -509,14 +509,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>빽다방</li>
               <li>충청남도</li>
               <li>아산탕정점</li>
               <li class="delete block_md">충청남도 아산시 탕정면 탕정면로8번길 33-14 (명암리)</li>
               <li class="delete block_xl">041-544-2022</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -549,14 +549,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>리춘시장</li>
               <li>서울특별시</li>
               <li>성신여대점</li>
               <li class="delete block_md">서울 성북구 동소문로20다길6 1층</li>
               <li class="delete block_xl">02-6080-0410</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -589,14 +589,14 @@
             </div>
           </ul>
           <ul>
-            <div class="wrap reset">
+            <div class="wrap reset accordion-1">
               <li>한신포차</li>
               <li>경상남도</li>
               <li>사천벌리점</li>
               <li class="delete block_md">경남 사천시 벌리2길 79(벌리동) 1층</li>
               <li class="delete block_xl">055-832-6692</li>
             </div>
-            <div class="detail">
+            <div class="detail accordion-2">
               <div class="flex_md">
                 <div class="photo col-40_md rectangle"></div>
                 <div class="wrap2 col-60_md">
@@ -685,6 +685,7 @@
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_QypsmeJREA1Qh50YAsGJPW5iWUTk0E8&callback=initMap"></script>

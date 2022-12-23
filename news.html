@@ -11,7 +11,7 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
-<body id="event">
+<body>
   <header>
     <div class="container-xl reset">
       <div class="wrap">
@@ -19,16 +19,16 @@
         <div class="list delete_xl">
           <ul>
             <li>
-              <p><span>이벤트 <i class="fas fa-caret-down icon_arrow_text"></i></span></p>
+              <p><span>소식 <i class="fas fa-caret-down icon_arrow_text"></i></span></p>
               <ul class="reset">
                 <a href="event.html">
-                  <li class="bold color1">이벤트</li> <!-- 변경 -->
+                  <li>이벤트</li>
                 </a>
                 <a href="recipe.html">
                   <li>레시피</li>
                 </a>
                 <a href="news.html">
-                  <li>소식</li>
+                  <li class="bold color1">소식</li> <!-- 변경 -->
                 </a>
               </ul>
             </li>
@@ -113,9 +113,9 @@
           <li>
             <p class="title">더본이야기<i class="fas fa-caret-down icon_arrow_text on"></i></p> <!-- 변경 -->
             <ul class="sub show"> <!-- 변경 -->
-              <li><a href="event.html" class="color2">이벤트</a></li> <!-- 변경 -->
+              <li><a href="event.html">이벤트</a></li>
               <li><a href="recipe.html">레시피</a></li>
-              <li><a href="news.html">소식</a></li>
+              <li><a href="news.html" class="color2">소식</a></li> <!-- 변경 -->
             </ul>
           </li>
         </ul>
@@ -123,31 +123,31 @@
     </div>
   </header>
 
-  <div id="top" class="delete_xl background-black">
+  <div id="newsTop" class="subTop delete_xl background-black">
     <div class="photo"></div>
     <div class="name">이벤트</div>
   </div>
 
-  <div id="list" class="delete block_xl">
+  <div id="newsList" class="subList delete block_xl">
     <div class="title">
       <p>더본이야기</p>
     </div>
     <div class="contents">
       <ul class="reset">
         <a href="event.html">
-          <li class="background-color2">이벤트</li> <!-- FIXME: -->
+          <li>이벤트</li>
         </a>
         <a href="recipe.html">
           <li>레시피</li>
         </a>
         <a href="news.html">
-          <li>소식</li>
+          <li class="background-color2">소식</li> <!-- 변경 -->
         </a>
       </ul>
     </div>
   </div>
 
-  <section>
+  <section id="news">
     <div class="container flex_sm row jc-between">
       <div class="box scroll col-48_sm col-100_md">
         <a href="javascript:void(0);">
@@ -240,6 +240,7 @@
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
   <script src="js/event_scroll.js"></script>
   <script

@@ -62,62 +62,6 @@ var mySwiper = new Swiper("#section6 .swiper-container", {
 });
 
 $(document).ready(function () {
-  // 피시 .nav
-  var $firstMenu = $(".nav > ul > li"),
-    $header = $("header"),
-    $headerHeight = $header.outerHeight();
-  // A.height() : A의 알맹이 높이
-  // A.innerHeight() : A의 패딩포함 높이
-  // A.outerHeight() : A의 보더포함 높이
-  // A.outerHeight(true) : A의 마진포함 높이
-  $firstMenu
-    .mouseenter(function () {
-      /* var currentMenu = $(this); */
-      var subHeight = $(this).find(".sub").outerHeight();
-
-      $header.stop().animate({ height: 100 + subHeight + "px" }, 300);
-      $(".sub").hide(); // 서브메뉴 안보이게 초기화
-      $(this).find(".sub").fadeIn(300);
-
-      /* setTimeout(function () {
-                $("ul").hide(); // 서브메뉴 안보이게 초기화
-                currentMenu.find("ul").show(300); // .find() 특정 하위 요소를 찾을 때 사용
-            });
-            // setTimeout(할일, 시간); 할일 function(){} */
-    })
-    .mouseleave(function () {
-      $header.stop().animate({ height: 100 + "px" }, 300);
-      $(this).find(".sub").fadeOut(300);
-    });
-
-  $(window).resize(function () {
-    var w = $(window).width();
-    if (w < 576) {
-      $("header").css({ height: "50px" });
-    } else if (w < 768) {
-      $("header").css({ height: "60px" });
-    } else if (w < 992) {
-      $("header").css({ height: "70px" });
-    } else if (w < 1200) {
-      $("header").css({ height: "80px" });
-    } else {
-      $("header").css({ height: "100px" });
-    }
-  });
-
-  // 모바일, 태블릿 .menu
-
-  $(".icon_menu").click(function () {
-    $(".menu").css({ "min-width": "200px", width: "80%" });
-  });
-  $(".icon_x").click(function () {
-    $(".menu").css({ "min-width": "0", width: "0" });
-  });
-
-  $(".menu .title").click(function () {
-    $(this).parent().children(".sub").slideToggle();
-  });
-
   // section2 테스트 브랜드
 
   $("#section2 .tab").click(function () {
@@ -145,144 +89,134 @@ $(document).ready(function () {
     .click(function () {
       $(".photo").css({ "background-image": "url(images/section2_04_p.png)" });
     });
-
-  // 하위메뉴 화살표
-  $(".icon_arrow_text")
-    .parent()
-    .click(function () {
-      $(this).children(".icon_arrow_text").toggleClass("on");
-    });
 });
 
-(function() {
+(function () {
+  function init(item) {
+    var items = item.querySelectorAll("li"),
+      current = 0,
+      autoUpdate = true,
+      timeTrans = 4000;
 
-	function init(item) {
-		var items = item.querySelectorAll('li'),
-        current = 0,
-        autoUpdate = true,
-        timeTrans = 4000;
-        
-		//create nav
-		var nav = document.createElement('nav');
-		nav.className = 'nav_arrows';
+    //create nav
+    var nav = document.createElement("nav");
+    nav.className = "nav_arrows";
 
-		//create button prev
-		var prevbtn = document.createElement('button');
-		prevbtn.className = 'prev';
-		prevbtn.setAttribute('aria-label', 'Prev');
+    //create button prev
+    var prevbtn = document.createElement("button");
+    prevbtn.className = "prev";
+    prevbtn.setAttribute("aria-label", "Prev");
 
-		//create button next
-		var nextbtn = document.createElement('button');
-		nextbtn.className = 'next';
-		nextbtn.setAttribute('aria-label', 'Next');
+    //create button next
+    var nextbtn = document.createElement("button");
+    nextbtn.className = "next";
+    nextbtn.setAttribute("aria-label", "Next");
 
-		//create counter
-		var counter = document.createElement('div');
-		counter.className = 'counter';
-		counter.innerHTML = "<span>1</span><span>"+items.length+"</span>";
+    //create counter
+    var counter = document.createElement("div");
+    counter.className = "counter";
+    counter.innerHTML = "<span>1</span><span>" + items.length + "</span>";
 
-		if (items.length > 1) {
-			nav.appendChild(prevbtn);
-			nav.appendChild(counter);
-			nav.appendChild(nextbtn);
-			item.appendChild(nav);
-		}
+    if (items.length > 1) {
+      nav.appendChild(prevbtn);
+      nav.appendChild(counter);
+      nav.appendChild(nextbtn);
+      item.appendChild(nav);
+    }
 
-		items[current].className = "current";
-		if (items.length > 1) items[items.length-1].className = "prev_slide";
+    items[current].className = "current";
+    if (items.length > 1) items[items.length - 1].className = "prev_slide";
 
-		var navigate = function(dir) {
-			items[current].className = "";
+    var navigate = function (dir) {
+      items[current].className = "";
 
-			if (dir === 'right') {
-				current = current < items.length-1 ? current + 1 : 0;
-			} else {
-				current = current > 0 ? current - 1 : items.length-1;
-			}
+      if (dir === "right") {
+        current = current < items.length - 1 ? current + 1 : 0;
+      } else {
+        current = current > 0 ? current - 1 : items.length - 1;
+      }
 
-			var	nextCurrent = current < items.length-1 ? current + 1 : 0,
-				prevCurrent = current > 0 ? current - 1 : items.length-1;
+      var nextCurrent = current < items.length - 1 ? current + 1 : 0,
+        prevCurrent = current > 0 ? current - 1 : items.length - 1;
 
-			items[current].className = "current";
-			items[prevCurrent].className = "prev_slide";
-			items[nextCurrent].className = "";
+      items[current].className = "current";
+      items[prevCurrent].className = "prev_slide";
+      items[nextCurrent].className = "";
 
-			//update counter
-			counter.firstChild.textContent = current + 1;
-		}
-    
-    item.addEventListener('mouseenter', function() {
-			autoUpdate = false;
-		});
+      //update counter
+      counter.firstChild.textContent = current + 1;
+    };
 
-		item.addEventListener('mouseleave', function() {
-			autoUpdate = true;
-		});
+    item.addEventListener("mouseenter", function () {
+      autoUpdate = false;
+    });
 
-		setInterval(function() {
-			if (autoUpdate) navigate('right');
-		},timeTrans);
-    
-		prevbtn.addEventListener('click', function() {
-			navigate('left');
-		});
+    item.addEventListener("mouseleave", function () {
+      autoUpdate = true;
+    });
 
-		nextbtn.addEventListener('click', function() {
-			navigate('right');
-		});
+    setInterval(function () {
+      if (autoUpdate) navigate("right");
+    }, timeTrans);
 
-		//keyboard navigation
-		document.addEventListener('keydown', function(ev) {
-			var keyCode = ev.keyCode || ev.which;
-			switch (keyCode) {
-				case 37:
-					navigate('left');
-					break;
-				case 39:
-					navigate('right');
-					break;
-			}
-		});
+    prevbtn.addEventListener("click", function () {
+      navigate("left");
+    });
 
-		// swipe navigation
-		// from http://stackoverflow.com/a/23230280
-		item.addEventListener('touchstart', handleTouchStart, false);        
-		item.addEventListener('touchmove', handleTouchMove, false);
-		var xDown = null;
-		var yDown = null;
-		function handleTouchStart(evt) {
-			xDown = evt.touches[0].clientX;
-			yDown = evt.touches[0].clientY;
-		};
-		function handleTouchMove(evt) {
-			if ( ! xDown || ! yDown ) {
-				return;
-			}
+    nextbtn.addEventListener("click", function () {
+      navigate("right");
+    });
 
-			var xUp = evt.touches[0].clientX;
-			var yUp = evt.touches[0].clientY;
+    //keyboard navigation
+    document.addEventListener("keydown", function (ev) {
+      var keyCode = ev.keyCode || ev.which;
+      switch (keyCode) {
+        case 37:
+          navigate("left");
+          break;
+        case 39:
+          navigate("right");
+          break;
+      }
+    });
 
-			var xDiff = xDown - xUp;
-			var yDiff = yDown - yUp;
+    // swipe navigation
+    // from http://stackoverflow.com/a/23230280
+    item.addEventListener("touchstart", handleTouchStart, false);
+    item.addEventListener("touchmove", handleTouchMove, false);
+    var xDown = null;
+    var yDown = null;
+    function handleTouchStart(evt) {
+      xDown = evt.touches[0].clientX;
+      yDown = evt.touches[0].clientY;
+    }
+    function handleTouchMove(evt) {
+      if (!xDown || !yDown) {
+        return;
+      }
 
-			if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-				if ( xDiff > 0 ) {
-					/* left swipe */
-					navigate('right');
-				} else {
-					navigate('left');
-				}
-			} 
-			/* reset values */
-			xDown = null;
-			yDown = null;
-		};
+      var xUp = evt.touches[0].clientX;
+      var yUp = evt.touches[0].clientY;
 
+      var xDiff = xDown - xUp;
+      var yDiff = yDown - yUp;
 
-	}
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        /*most significant*/
+        if (xDiff > 0) {
+          /* left swipe */
+          navigate("right");
+        } else {
+          navigate("left");
+        }
+      }
+      /* reset values */
+      xDown = null;
+      yDown = null;
+    }
+  }
 
-	[].slice.call(document.querySelectorAll('.cd-slider')).forEach( function(item) {
-		init(item);
-	});
-
+  [].slice.call(document.querySelectorAll(".cd-slider")).forEach(function (item) {
+    init(item);
+  });
 })();

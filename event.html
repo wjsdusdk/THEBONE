@@ -11,7 +11,7 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
-<body id="event">
+<body>
   <header>
     <div class="container-xl reset">
       <div class="wrap">
@@ -123,19 +123,19 @@
     </div>
   </header>
 
-  <div id="top" class="delete_xl background-black">
+  <div id="eventTop" class="subTop delete_xl background-black">
     <div class="photo"></div>
     <div class="name">이벤트</div>
   </div>
 
-  <div id="list" class="delete block_xl">
+  <div id="eventList" class="subList delete block_xl">
     <div class="title">
       <p>더본이야기</p>
     </div>
     <div class="contents">
       <ul class="reset">
         <a href="event.html">
-          <li class="background-color2">이벤트</li> <!-- FIXME: -->
+          <li class="background-color2">이벤트</li> <!-- 변경 -->
         </a>
         <a href="recipe.html">
           <li>레시피</li>
@@ -147,7 +147,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="event">
     <div class="container flex_sm row jc-between">
       <div class="box scroll col-48_sm col-100_md">
         <a href="javascript:void(0);">
@@ -240,6 +240,7 @@
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
   <script src="js/event_scroll.js"></script>
   <script

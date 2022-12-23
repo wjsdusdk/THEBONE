@@ -6,59 +6,59 @@ header .menu .icon_arrow_text { .on }
 header .menu .sub { .show }
 header .menu .sub li { .color2 }
 
-#list .contents li { .background-color2 }
+.subList .contents li { .background-color2 }
 */
 
 /* 변경 */
-#history #top .photo {
+#historyTop .photo {
   background: url(../images/top_01.jpg) center;
   background-size: cover;
 }
-#ceo #top .photo {
+#ceoTop .photo {
   background: url(../images/top_02.jpg) center;
   background-size: cover;
 }
-#brand #top .photo {
+#brandTop .photo {
   background: url(../images/top_03.jpg) center;
   background-size: cover;
 }
-#testbrand #top .photo {
+#testbrandTop .photo {
   background: url(../images/top_04.jpg) center;
   background-size: cover;
 }
-#internal #top .photo {
+#internalTop .photo {
   background: url(../images/top_05.jpg) center;
   background-size: cover;
 }
-#foreign #top .photo {
+#foreignTop .photo {
   background: url(../images/top_06.jpg) center;
   background-size: cover;
 }
-#step #top .photo {
+#stepTop .photo {
   background: url(../images/top_07.jpg) center;
   background-size: cover;
 }
-#briefing #top .photo {
+#briefingTop .photo {
   background: url(../images/top_08.jpg) center;
   background-size: cover;
 }
-#faq #top .photo {
+#faqTop .photo {
   background: url(../images/top_09.jpg) center;
   background-size: cover;
 }
-#inquiry #top .photo {
+#inquiryTop .photo {
   background: url(../images/top_10.jpg) center;
   background-size: cover;
 }
-#event #top .photo {
+#eventTop .photo {
   background: url(../images/top_11.jpg) center;
   background-size: cover;
 }
-#recipe #top .photo {
+#recipeTop .photo {
   background: url(../images/top_12.jpg) center;
   background-size: cover;
 }
-#news #top .photo {
+#newsTop .photo {
   background: url(../images/top_13.jpg) center;
   background-size: cover;
 }
@@ -79,18 +79,18 @@ h2 {
   word-break: keep-all;
 }
 
-#top {
+.subTop {
   position: relative;
   margin-top: 160px;
   overflow: hidden;
 }
-#top .photo {
+.subTop .photo {
   width: 100%;
   height: 200px;
   opacity: 0.5;
   transition: all 0.3s;
 }
-#top .name {
+.subTop .name {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -109,50 +109,50 @@ h2 {
   background: #eee;
   word-break: keep-all;
 }
-#history section .container-fix {
+#history .container-fix {
   position: relative;
   overflow: hidden;
 }
-#history section .line {
+#history .line {
   background: rgb(5, 15, 145);
 }
-#history section .vertical {
+#history .vertical {
   position: absolute;
   width: 3px;
   height: 100%;
   top: 20px;
   left: 0;
 }
-#history section .box {
+#history .box {
   width: 100%;
   overflow: hidden;
   margin-bottom: 50px;
 }
-#history section .box:nth-child(2) .year {
+#history .box:nth-child(2) .year {
   left: 15% !important;
   opacity: 1 !important;
 }
-#history section .box:nth-child(2) .horizontal {
+#history .box:nth-child(2) .horizontal {
   left: 0 !important;
   opacity: 1 !important;
 }
-#history section .box:nth-child(2) .contents {
+#history .box:nth-child(2) .contents {
   left: 15% !important;
   opacity: 1 !important;
 }
-#history section .box:nth-child(2) .photo {
+#history .box:nth-child(2) .photo {
   left: 15% !important;
   opacity: 1 !important;
 }
-#history section .box:nth-last-child(1) {
+#history .box:nth-last-child(1) {
   margin-bottom: 0;
 }
-#history section .wrap1 {
+#history .wrap1 {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-#history section .year {
+#history .year {
   position: relative;
   width: 85%;
   top: 0;
@@ -162,7 +162,7 @@ h2 {
   color: rgb(5, 15, 145);
   opacity: 0;
 }
-#history section .horizontal {
+#history .horizontal {
   position: absolute;
   width: 10%;
   height: 2px;
@@ -170,11 +170,11 @@ h2 {
   left: -15%;
   opacity: 0;
 }
-#history section .wrap2 {
+#history .wrap2 {
   position: relative;
   overflow: hidden;
 }
-#history section .contents {
+#history .contents {
   position: relative;
   width: 85%;
   top: 0;
@@ -182,15 +182,15 @@ h2 {
   margin: 20px 0;
   opacity: 0;
 }
-#history section .month {
+#history .month {
   font-weight: bold;
   margin-bottom: 10px;
 }
-#history section .text {
+#history .text {
   margin-bottom: 10px;
   line-height: 20px;
 }
-#history section .photo {
+#history .photo {
   position: relative;
   width: 85%;
   padding-top: 60%;
@@ -199,126 +199,126 @@ h2 {
   margin: 20px 0;
   opacity: 0;
 }
-#history section .box:nth-child(2) .photo {
+#history .box:nth-child(2) .photo {
   background: url(../images/1993_1_ssambap.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(3) .photo {
+#history .box:nth-child(3) .photo {
   background: url(../images/1998_1.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(4) .photo {
+#history .box:nth-child(4) .photo {
   background: url(../images/2002_1_bornga.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(5) .photo {
+#history .box:nth-child(5) .photo {
   background: url(../images/2004_1.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(6) .photo:nth-child(5) {
+#history .box:nth-child(6) .photo:nth-child(5) {
   background: url(../images/2005_1.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(6) .photo:nth-child(6) {
+#history .box:nth-child(6) .photo:nth-child(6) {
   background: url(../images/2005_4_bongachina.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(7) .photo:nth-child(4) {
+#history .box:nth-child(7) .photo:nth-child(4) {
   background: url(../images/2006_01.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(7) .photo:nth-child(5) {
+#history .box:nth-child(7) .photo:nth-child(5) {
   background: url(../images/2006_02_hongkong_1.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(8) .photo {
+#history .box:nth-child(8) .photo {
   background: url(../images/2008_1.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(9) .photo:nth-child(4) {
+#history .box:nth-child(9) .photo:nth-child(4) {
   background: url(../images/2009_1_paiksbeer.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(9) .photo:nth-child(5) {
+#history .box:nth-child(9) .photo:nth-child(5) {
   background: url(../images/2009_2.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(11) .photo {
+#history .box:nth-child(11) .photo {
   background: url(../images/2011_1.png) center;
   background-size: cover;
 }
-#history section .box:nth-child(12) .photo:nth-child(8) {
+#history .box:nth-child(12) .photo:nth-child(8) {
   background: url(../images/2012_01.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(12) .photo:nth-child(9) {
+#history .box:nth-child(12) .photo:nth-child(9) {
   background: url(../images/2012_03_newmauljp.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(13) .photo:nth-child(5) {
+#history .box:nth-child(13) .photo:nth-child(5) {
   background: url(../images/2013_01_borngamal.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(13) .photo:nth-child(6) {
+#history .box:nth-child(13) .photo:nth-child(6) {
   background: url(../images/2013_02.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(14) .photo:nth-child(8) {
+#history .box:nth-child(14) .photo:nth-child(8) {
   background: url(../images/2014_02_dolbaegi.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(14) .photo:nth-child(9) {
+#history .box:nth-child(14) .photo:nth-child(9) {
   background: url(../images/2014_03_paikspan.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(15) .photo:nth-child(7) {
+#history .box:nth-child(15) .photo:nth-child(7) {
   background: url(../images/2015_01_bongaex.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(15) .photo:nth-child(8) {
+#history .box:nth-child(15) .photo:nth-child(8) {
   background: url(../images/2015_02_cichange.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(15) .photo:nth-child(9) {
+#history .box:nth-child(15) .photo:nth-child(9) {
   background: url(../images/2015_03.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(16) .photo {
+#history .box:nth-child(16) .photo {
   background: url(../images/2016_01_coffee.jpg) center;
   background-size: cover;
 }
-#history section .box:nth-child(17) .photo {
+#history .box:nth-child(17) .photo {
   background: url(../images/2017_01.jpg) center;
   background-size: cover;
 }
 
-#ceo section {
+#ceo {
   margin-bottom: 0;
   word-break: keep-all;
 }
-#ceo section .box {
+#ceo .box {
   margin-bottom: 7vh;
 }
-#ceo section .sign {
+#ceo .sign {
   margin-bottom: 14vh;
   font-size: 15px;
   font-weight: bold;
   line-height: 30px;
 }
-#ceo section .sign img {
+#ceo .sign img {
   width: 150px;
 }
-#ceo section .bg {
+#ceo .bg {
   width: 100vw;
   height: 150px;
   transform: translateX(-5%);
   background: rgb(5, 15, 145);
 }
-#ceo section .bg .container {
+#ceo .bg .container {
   position: relative;
   height: 100%;
 }
-#ceo section .bg p {
+#ceo .bg p {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -328,119 +328,107 @@ h2 {
   line-height: 30px;
   color: rgba(5, 15, 245, 0.5);
 }
-#ceo section .bg img {
+#ceo .bg img {
   position: absolute;
   height: 40vh;
   bottom: 0;
   right: 0;
 }
 
-#testbrand section .gallery,
-#brand section .gallery {
+#testbrand .gallery,
+#brand .gallery {
   grid-template-columns: 1fr;
   grid-gap: 50px;
 }
-#testbrand section .title,
-#brand section .title {
+#testbrand .title,
+#brand .title {
   margin-bottom: 50px;
 }
-#testbrand section .box,
-#brand section .box {
+#testbrand .box,
+#brand .box {
   text-align: center;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
 }
-#testbrand section .box .photo,
-#brand section .box .photo {
+#testbrand .box .photo,
+#brand .box .photo {
   width: 100%;
 }
-#brand section .box:nth-child(1) .photo {
+#brand .box:nth-child(1) .photo {
   background: url(../images/brand_main_01.png) center;
   background-size: cover;
 }
-#brand section .box:nth-child(2) .photo {
+#brand .box:nth-child(2) .photo {
   background: url(../images/brand_main_02.jpg) center;
   background-size: cover;
 }
-#brand section .box:nth-child(3) .photo {
+#brand .box:nth-child(3) .photo {
   background: url(../images/brand_main_03.png) center;
   background-size: cover;
 }
-#brand section .box:nth-child(4) .photo {
+#brand .box:nth-child(4) .photo {
   background: url(../images/brand_main_04.jpg) center;
   background-size: cover;
 }
-#brand section .box:nth-child(5) .photo {
+#brand .box:nth-child(5) .photo {
   background: url(../images/brand_main_05.jpg) center;
   background-size: cover;
 }
-#brand section .box:nth-child(6) .photo {
+#brand .box:nth-child(6) .photo {
   background: url(../images/brand_main_06.jpg) center;
   background-size: cover;
 }
-#testbrand section .box .logo,
-#brand section .box .logo {
+#testbrand .box .logo,
+#brand .box .logo {
   height: 40px;
   margin: 30px 0;
 }
-#testbrand section .box .logo img,
-#brand section .box .logo img {
+#testbrand .box .logo img,
+#brand .box .logo img {
   height: 100%;
 }
-#testbrand section .box .view,
-#brand section .box .view {
+#testbrand .box .view,
+#brand .box .view {
   margin: 0 0 30px;
 }
 
-#testbrand section .box:nth-child(1) .photo {
+#testbrand .box:nth-child(1) .photo {
   background: url(../images/testbrand_main_01.jpg) center;
   background-size: cover;
 }
 
-#internal section .map {
+#foreign .map,
+#internal .map {
   width: 100%;
   height: 80vw;
 }
-#internal section #map {
+#foreign #map,
+#internal #map {
   width: 100%;
   height: 100%;
 }
-#internal section .search {
+#foreign .search,
+#internal .search {
   margin: 50px 0;
 }
-#internal section .form-location {
-  position: relative;
-  width: 100%;
-}
-#internal section .form-location:nth-child(1) {
+#foreign .form-box:nth-child(1),
+#internal .form-box:nth-child(1) {
   float: left;
   width: 48%;
   margin: 0;
 }
-#internal section .form-location:nth-child(2) {
+#internal .form-box:nth-child(2) {
   float: right;
   width: 48%;
   margin: 40px 0 0;
 }
-#internal section .form-location p {
-  margin: 10px 0;
-  font-size: 15px;
-  font-weight: bold;
-}
-#internal section .form-location .form-control {
-  width: 100%;
-  height: 40px;
-  padding: 0 10px;
-  transition: all 0.3s;
-}
-#internal section .form-control:focus {
-  outline: none;
-}
-#internal section .form-location:nth-child(5) .form-control {
+#foreign .form-box:nth-child(5) .form-control,
+#internal .form-box:nth-child(5) .form-control {
   padding: 0 45px 0 10px;
   border: none;
   border-bottom: 1px solid #333;
 }
-#internal section .fa-search {
+#foreign .fa-search,
+#internal .fa-search {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -449,30 +437,39 @@ h2 {
   color: rgb(5, 15, 145);
   line-height: 40px;
 }
-#internal section .list {
+#foreign .list,
+#internal .list {
   line-height: 50px;
   text-align: center;
 }
-#internal section .list .title li {
+#foreign .list .title li,
+#internal .list .title li {
   float: left;
   width: 33.3%;
   font-weight: bold;
   border-top: 3px solid rgb(5, 15, 145);
   border-bottom: 1px solid rgb(5, 15, 145);
 }
-#internal section .list .contents .wrap {
+#foreign .list .contents .wrap,
+#internal .list .contents .wrap {
   cursor: pointer;
 }
-#internal section .list .contents .wrap:hover li {
+#foreign .list .contents .wrap:hover li,
+#internal .list .contents .wrap:hover li {
   background: #eee;
 }
-#internal section .list .contents li {
+#foreign .list .contents li,
+#internal .list .contents li {
   width: 33.3%;
   float: left;
   transition: all 0.3s;
   border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-#internal section .list .contents .detail {
+#foreign .list .contents .detail,
+#internal .list .contents .detail {
   display: none;
   padding: 20px 20px 10px;
   background: #eee;
@@ -480,128 +477,269 @@ h2 {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-#internal section .list .contents .detail .photo {
+#foreign .list .contents .detail .photo,
+#internal .list .contents .detail .photo {
   margin-bottom: 10px;
 }
-#internal section .list .contents ul:nth-child(1) .detail .photo {
+#internal .list .contents ul:nth-child(1) .detail .photo {
   background: url(../images/internal_01.png) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(2) .detail .photo {
+#internal .list .contents ul:nth-child(2) .detail .photo {
   background: url(../images/internal_02.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(3) .detail .photo {
+#internal .list .contents ul:nth-child(3) .detail .photo {
   background: url(../images/internal_03.png) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(4) .detail .photo {
+#internal .list .contents ul:nth-child(4) .detail .photo {
   background: url(../images/internal_04.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(5) .detail .photo {
+#internal .list .contents ul:nth-child(5) .detail .photo {
   background: url(../images/internal_05.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(6) .detail .photo {
+#internal .list .contents ul:nth-child(6) .detail .photo {
   background: url(../images/internal_06.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(7) .detail .photo {
+#internal .list .contents ul:nth-child(7) .detail .photo {
   background: url(../images/internal_07.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(8) .detail .photo {
+#internal .list .contents ul:nth-child(8) .detail .photo {
   background: url(../images/internal_08.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(9) .detail .photo {
+#internal .list .contents ul:nth-child(9) .detail .photo {
   background: url(../images/internal_09.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents ul:nth-child(10) .detail .photo {
+#internal .list .contents ul:nth-child(10) .detail .photo {
   background: url(../images/internal_10.jpg) center;
   background-size: cover;
 }
-#internal section .list .contents .detail .text p {
+#foreign .list .contents .detail .text p,
+#internal .list .contents .detail .text p {
   float: left;
 }
-#internal section .list .contents .detail .text p:nth-child(2n + 1) {
+#foreign .list .contents .detail .text p:nth-child(2n + 1),
+#internal .list .contents .detail .text p:nth-child(2n + 1) {
   width: 90px;
   font-weight: bold;
 }
-#internal section .list .contents .detail .text p:nth-child(2n) {
+#foreign .list .contents .detail .text p:nth-child(2n),
+#internal .list .contents .detail .text p:nth-child(2n) {
   width: calc(100% - 90px);
 }
 
-#step section .box {
+#foreign .form-box:nth-child(2) {
+  float: right;
+  width: 48%;
+}
+#foreign .list .contents ul:nth-child(1) .detail .photo {
+  background: url(../images/foreign_01.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(2) .detail .photo {
+  background: url(../images/foreign_02.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(3) .detail .photo {
+  background: url(../images/foreign_03.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(4) .detail .photo {
+  background: url(../images/foreign_04.png) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(5) .detail .photo {
+  background: url(../images/foreign_05.png) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(6) .detail .photo {
+  background: url(../images/foreign_06.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(7) .detail .photo {
+  background: url(../images/foreign_07.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(8) .detail .photo {
+  background: url(../images/foreign_08.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(9) .detail .photo {
+  background: url(../images/foreign_09.jpg) center;
+  background-size: cover;
+}
+#foreign .list .contents ul:nth-child(10) .detail .photo {
+  background: url(../images/foreign_10.jpg) center;
+  background-size: cover;
+}
+
+#step .box {
   position: relative;
   width: 100%;
   margin: 50px 0;
   border: 5px solid #eee;
   text-align: center;
 }
-#step section .box .wrap {
+#step .box .wrap {
   position: absolute;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
 }
-#step section .box img {
+#step .box img {
   width: 100%;
 }
-#step section .box p:nth-child(2) {
+#step .box p:nth-child(2) {
   width: 100px;
   margin: 20px auto;
   padding: 20px;
   background: #ddd;
   border-radius: 100%;
 }
-#step section .box p:nth-child(1) {
+#step .box p:nth-child(1) {
   font-size: 13px;
   font-weight: bold;
   color: rgb(5, 15, 145);
 }
-#step section .box p:nth-child(3) {
+#step .box p:nth-child(3) {
   font-size: 14px;
   font-weight: bold;
 }
 
-#event section .box {
+#faq .title {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+#faq .box:nth-child(1) .title {
+  border-top: 0px solid #eee;
+}
+#faq .title p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+}
+#faq .title p:nth-child(1) {
+  padding-right: 5px;
+}
+#faq .title .i-a-t {
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+#faq .title .i-a-t.on {
+  transform: rotate(180deg);
+}
+#faq .contents {
+  display: none;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+#faq .contents p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#inquiry .form-box {
+  margin-bottom: 30px;
+}
+#inquiry .form-box:nth-last-child(1) {
+  margin-bottom: 0;
+}
+#inquiry .form-box .form-control {
+  color: #888;
+  border: none;
+  border-bottom: 1px solid #888;
+}
+#inquiry .form-box:nth-child(1) .form-control:nth-child(2) {
+  float: left;
+  width: 48%;
+}
+#inquiry .form-box:nth-child(1) .form-control:nth-child(3) {
+  float: right;
+  width: 48%;
+}
+#inquiry .form-box:nth-child(3) .form-control {
+  float: left;
+  width: 31%;
+  margin-right: 3.5%;
+}
+#inquiry .form-box:nth-child(3) .form-control:nth-last-child(1) {
+  margin-right: 0;
+}
+#inquiry .form-box:nth-child(4) .form-control {
+  float: left;
+  width: 45%;
+}
+#inquiry .form-box:nth-child(4) p:nth-child(3) {
+  float: left;
+  width: 10%;
+  text-align: center;
+  color: #888;
+}
+#inquiry .form-box:nth-child(7) .form-control {
+  height: auto;
+  padding: 10px;
+  border: 1px solid #888;
+}
+#inquiry .btn {
+  margin-top: 30px;
+}
+#inquiry .btn p {
+  width: 100px;
+  margin: 10px;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #fff;
+  background: rgb(5, 15, 145);
+  text-align: center;
+}
+#inquiry .btn p:nth-child(2) {
+  color: rgb(5, 15, 145);
+  background: #fff;
+  border: 1px solid rgb(5, 15, 145);
+}
+
+#event .box {
   width: 100%;
   margin-bottom: 50px;
   border-bottom: 1px solid #ddd;
 }
-#event section .box:nth-last-child(1) {
+#event .box:nth-last-child(1) {
   margin-bottom: 0;
   border-bottom: 0px solid #ddd;
 }
-#event section .box:nth-child(1) .photo {
+#event .box:nth-child(1) .photo {
   background: url(../images/event_bn_01_m.png);
   background-size: cover;
 }
-#event section .box:nth-child(2) .photo {
+#event .box:nth-child(2) .photo {
   background: url(../images/event_bn_02_m.png);
   background-size: cover;
 }
-#event section .box:nth-child(3) .photo {
+#event .box:nth-child(3) .photo {
   background: url(../images/event_bn_03_m.png);
   background-size: cover;
 }
-#event section .box .text {
+#event .box .text {
   padding: 20px 0 50px;
   text-align: center;
 }
-#event section .box:nth-last-child(1) .text {
+#event .box:nth-last-child(1) .text {
   padding: 20px 0 0;
 }
-#event section .box .logo img {
+#event .box .logo img {
   height: 20px;
 }
-#event section .box .text h1 {
+#event .box .text h1 {
   margin: 5px 0;
 }
-#event section .box .text p {
+#event .box .text p {
   color: #999;
 }
 
@@ -617,48 +755,49 @@ h2 {
     line-height: 45px;
   }
 
-  #ceo section .sign {
+  #ceo .sign {
     font-size: 16px;
   }
-  #ceo section .bg {
+  #ceo .bg {
     height: 200px;
     background: rgb(5, 15, 145);
   }
-  #ceo section .bg p {
+  #ceo .bg p {
     font-size: 40px;
     line-height: 40px;
   }
 
-  #testbrand section .gallery,
-  #brand section .gallery {
+  #testbrand .gallery,
+  #brand .gallery {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  #testbrand section .title,
-  #brand section .title {
+  #testbrand .title,
+  #brand .title {
     margin-bottom: 60px;
   }
-  #testbrand section .box,
-  #brand section .box {
+  #testbrand .box,
+  #brand .box {
     margin-bottom: 30px;
   }
 
-  #internal section .search {
+  #foreign .search,
+  #internal .search {
     margin: 60px 0;
   }
 
-  #step section .box {
+  #step .box {
     float: left;
     width: 48%;
     margin: 4% 0 0 4%;
   }
-  #step section .box:nth-child(2n + 1) {
+  #step .box:nth-child(2n + 1) {
     margin-left: 0;
   }
-  #step section .box p:nth-child(1) {
+  #step .box p:nth-child(1) {
     font-size: 14px;
   }
-  #step section .box p:nth-child(3) {
+  #step .box p:nth-child(3) {
     font-size: 15px;
   }
 }
@@ -674,229 +813,233 @@ h2 {
     line-height: 50px;
   }
 
-  #top {
+  .subTop {
     margin-top: 200px;
   }
-  #top .photo {
+  .subTop .photo {
     height: 400px;
   }
-  #top .name {
+  .subTop .name {
     font-size: 40px;
   }
 
-  #history section .container-fix {
+  #history .container-fix {
     height: 6800px;
   }
-  #history section .vertical {
+  #history .vertical {
     top: 23px;
     left: 50%;
   }
-  #history section .box {
+  #history .box {
     position: relative;
     width: 50%;
     top: 0;
     left: 50%;
     margin: 0;
   }
-  #history section .box:nth-child(2n) {
+  #history .box:nth-child(2n) {
     left: 0;
     text-align: right;
   }
-  #history section .year {
+  #history .year {
     font-size: 35px;
   }
-  #history section .contents {
+  #history .contents {
     margin-top: 20px;
     font-size: 15px;
     line-height: 30px;
   }
-  #history section .box:nth-child(2) .horizontal {
+  #history .box:nth-child(2) .horizontal {
     left: 90% !important;
   }
-  #history section .box:nth-child(2) .year {
+  #history .box:nth-child(2) .year {
     left: 0 !important;
   }
-  #history section .box:nth-child(2) .contents {
+  #history .box:nth-child(2) .contents {
     left: 0 !important;
   }
-  #history section .box:nth-child(2) .photo {
+  #history .box:nth-child(2) .photo {
     left: 0 !important;
   }
-  #history section .box:nth-child(2n) .year {
+  #history .box:nth-child(2n) .year {
     left: -15%;
   }
-  #history section .box:nth-child(2n) .horizontal {
+  #history .box:nth-child(2n) .horizontal {
     left: 100%;
   }
-  #history section .box:nth-child(2n) .contents {
+  #history .box:nth-child(2n) .contents {
     left: -15%;
   }
-  #history section .box:nth-child(2n) .photo {
+  #history .box:nth-child(2n) .photo {
     left: -15%;
   }
-  #history section .box:nth-child(2n + 1) .year {
+  #history .box:nth-child(2n + 1) .year {
     left: 40%;
   }
-  #history section .box:nth-child(2n + 1) .horizontal {
+  #history .box:nth-child(2n + 1) .horizontal {
     left: -15%;
   }
-  #history section .box:nth-child(2n + 1) .contents {
+  #history .box:nth-child(2n + 1) .contents {
     left: 40%;
   }
-  #history section .box:nth-child(2n + 1) .photo {
+  #history .box:nth-child(2n + 1) .photo {
     left: 40%;
   }
-  #history section .box:nth-child(3) {
+  #history .box:nth-child(3) {
     top: -200px;
   }
-  #history section .box:nth-child(4) {
+  #history .box:nth-child(4) {
     top: -250px;
   }
-  #history section .box:nth-child(5) {
+  #history .box:nth-child(5) {
     top: -450px;
   }
-  #history section .box:nth-child(6) {
+  #history .box:nth-child(6) {
     top: -500px;
   }
-  #history section .box:nth-child(7) {
+  #history .box:nth-child(7) {
     top: -1100px;
   }
-  #history section .box:nth-child(8) {
+  #history .box:nth-child(8) {
     top: -1100px;
   }
-  #history section .box:nth-child(9) {
+  #history .box:nth-child(9) {
     top: -1750px;
   }
-  #history section .box:nth-child(10) {
+  #history .box:nth-child(10) {
     top: -1750px;
   }
-  #history section .box:nth-child(11) {
+  #history .box:nth-child(11) {
     top: -1800px;
   }
-  #history section .box:nth-child(12) {
+  #history .box:nth-child(12) {
     top: -2050px;
   }
-  #history section .box:nth-child(13) {
+  #history .box:nth-child(13) {
     top: -2800px;
   }
-  #history section .box:nth-child(14) {
+  #history .box:nth-child(14) {
     top: -2800px;
   }
-  #history section .box:nth-child(15) {
+  #history .box:nth-child(15) {
     top: -3900px;
   }
-  #history section .box:nth-child(16) {
+  #history .box:nth-child(16) {
     top: -3950px;
   }
-  #history section .box:nth-child(17) {
+  #history .box:nth-child(17) {
     top: -4600px;
   }
 
-  #ceo section .sign {
+  #ceo .sign {
     font-size: 17px;
   }
-  #ceo section .sign img {
+  #ceo .sign img {
     width: 200px;
     margin-left: 20px;
   }
-  #ceo section .bg {
+  #ceo .bg {
     height: 250px;
   }
-  #ceo section .bg p {
+  #ceo .bg p {
     font-size: 50px;
     line-height: 50px;
   }
 
-  #testbrand section .gallery,
-  #brand section .gallery {
+  #testbrand .gallery,
+  #brand .gallery {
     grid-gap: 20px;
   }
-  #testbrand section .title,
-  #brand section .title {
+  #testbrand .title,
+  #brand .title {
     margin-bottom: 70px;
   }
-  #testbrand section .box,
-  #brand section .box {
+  #testbrand .box,
+  #brand .box {
     margin-bottom: 40px;
   }
 
-  #internal section .search {
+  #foreign .search,
+  #internal .search {
     margin: 70px 0;
   }
-  #internal section .form-location:nth-child(2) {
+  #internal .form-box:nth-child(2) {
     margin: 60px 0 0;
   }
-  #internal section .form-location p {
-    margin: 20px 0;
-  }
-  #internal section .form-location .form-control {
-    padding: 0 20px;
-  }
-  #internal section .form-location:nth-child(5) .form-control {
+  #foreign .form-box:nth-child(5) .form-control,
+  #internal .form-box:nth-child(5) .form-control {
     padding: 0 55px 0 20px;
   }
-  #internal section .fa-search {
+  #foreign .fa-search,
+  #internal .fa-search {
     padding: 0 15px;
   }
-  #internal section .list {
+  #foreign .list,
+  #internal .list {
     font-size: 15px;
   }
-  #internal section .list .title li,
-  #internal section .list .contents li {
+  #foreign .list .title li,
+  #foreign .list .contents li,
+  #internal .list .title li,
+  #internal .list .contents li {
     width: 15%;
   }
-  #internal section .list .title li:nth-child(4),
-  #internal section .list .contents li:nth-child(4) {
+  #foreign .list .title li:nth-child(4),
+  #foreign .list .contents li:nth-child(4),
+  #internal .list .title li:nth-child(4),
+  #internal .list .contents li:nth-child(4) {
     width: 55%;
   }
-  #internal section .list .contents .detail .wrap2 {
+  #foreign .list .contents .detail .wrap2,
+  #internal .list .contents .detail .wrap2 {
     padding-left: 20px;
   }
-  #internal section .list .contents .detail .text {
+  #foreign .list .contents .detail .text,
+  #internal .list .contents .detail .text {
     margin: 10px 0;
   }
 
-  #step section .box {
+  #step .box {
     width: 30%;
     margin: 5% 0 0 5%;
   }
-  #step section .box:nth-child(2n + 1) {
+  #step .box:nth-child(2n + 1) {
     margin-left: 5%;
   }
-  #step section .box:nth-child(3n + 1) {
+  #step .box:nth-child(3n + 1) {
     margin-left: 0;
   }
-  #step section .box p:nth-child(3) {
+  #step .box p:nth-child(3) {
     font-size: 15px;
   }
 
-  #event section .box .photo::after {
+  #event .box .photo::after {
     padding-bottom: 25%;
   }
-  #event section .box:nth-child(1) .photo {
+  #event .box:nth-child(1) .photo {
     background: url(../images/event_bn_01.png);
     background-size: contain;
   }
-  #event section .box:nth-child(2) .photo {
+  #event .box:nth-child(2) .photo {
     background: url(../images/event_bn_02.png);
     background-size: contain;
   }
-  #event section .box:nth-child(3) .photo {
+  #event .box:nth-child(3) .photo {
     background: url(../images/event_bn_03.png);
     background-size: contain;
   }
-  #event section .box .text {
+  #event .box .text {
     padding: 30px 0;
     text-align: left;
   }
-  #event section .box .text p {
+  #event .box .text p {
     font-size: 15px;
     line-height: 40px;
   }
-  #event section .box .logo img {
+  #event .box .logo img {
     height: 25px;
   }
-  #event section .box .text h1 {
+  #event .box .text h1 {
     line-height: 30px;
   }
 }
@@ -910,114 +1053,128 @@ h2 {
     line-height: 65px;
   }
 
-  #history section .container-fix {
+  #history .container-fix {
     height: 7800px;
   }
-  #history section .box:nth-child(2n) .contents {
+  #history .box:nth-child(2n) .contents {
     left: 25%;
   }
-  #history section .box:nth-child(3) {
+  #history .box:nth-child(3) {
     top: -200px;
   }
-  #history section .box:nth-child(4) {
+  #history .box:nth-child(4) {
     top: -250px;
   }
-  #history section .box:nth-child(5) {
+  #history .box:nth-child(5) {
     top: -450px;
   }
-  #history section .box:nth-child(6) {
+  #history .box:nth-child(6) {
     top: -500px;
   }
-  #history section .box:nth-child(7) {
+  #history .box:nth-child(7) {
     top: -1200px;
   }
-  #history section .box:nth-child(8) {
+  #history .box:nth-child(8) {
     top: -1200px;
   }
-  #history section .box:nth-child(9) {
+  #history .box:nth-child(9) {
     top: -1750px;
   }
-  #history section .box:nth-child(10) {
+  #history .box:nth-child(10) {
     top: -1900px;
   }
-  #history section .box:nth-child(11) {
+  #history .box:nth-child(11) {
     top: -1800px;
   }
-  #history section .box:nth-child(12) {
+  #history .box:nth-child(12) {
     top: -2200px;
   }
-  #history section .box:nth-child(13) {
+  #history .box:nth-child(13) {
     top: -2800px;
   }
-  #history section .box:nth-child(14) {
+  #history .box:nth-child(14) {
     top: -3000px;
   }
-  #history section .box:nth-child(15) {
+  #history .box:nth-child(15) {
     top: -3950px;
   }
-  #history section .box:nth-child(16) {
+  #history .box:nth-child(16) {
     top: -4250px;
   }
-  #history section .box:nth-child(17) {
+  #history .box:nth-child(17) {
     top: -4650px;
   }
 
-  #testbrand section .gallery,
-  #brand section .gallery {
+  #testbrand .gallery,
+  #brand .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #testbrand section .title,
-  #brand section .title {
+  #testbrand .title,
+  #brand .title {
     margin-bottom: 80px;
   }
-  #testbrand section .box,
-  #brand section .box {
+  #testbrand .box,
+  #brand .box {
     margin-bottom: 50px;
   }
 
-  #internal section .map {
+  #foreign .map,
+  #internal .map {
     height: 50vh;
   }
-  #internal section .search {
+  #foreign .search,
+  #internal .search {
     margin: 80px 0;
   }
 }
 @media (min-width: 1200px) {
   /* 변경 */
-  #history #list .title,
-  #ceo #list .title {
-    background: url(../images/mb_thebone_p.png) center;
+  #historyList .title,
+  #ceoList .title {
+    background: url(../images/list_01.png) center;
     background-size: cover;
   }
-  #testbrand #list .title,
-  #brand #list .title {
-    background: url(../images/mb_brand_p.png) center;
+  #testbrandList .title,
+  #brandList .title {
+    background: url(../images/list_02.jpg) center;
     background-size: cover;
   }
-  #internal #list .title {
-    background: url(../images/mb_brand_p.png) center;
+  #internalList .title,
+  #foreignList .title {
+    background: url(../images/list_03.jpg) center;
     background-size: cover;
   }
-  #step #list .title {
-    background: url(../images/mb_brand_p.png) center;
+  #stepList .title,
+  #briefingList .title,
+  #faqList .title,
+  #inquiryList .title {
+    background: url(../images/list_04.jpg) center;
     background-size: cover;
   }
-  #event #list .title {
-    background: url(../images/mb_brand_p.png) center;
+  #eventList .title,
+  #recipeList .title,
+  #newsList .title {
+    background: url(../images/list_05.jpg) center;
     background-size: cover;
   }
 
-  #history #list .contents li,
-  #ceo #list .contents li,
-  #testbrand #list .contents li,
-  #brand #list .contents li,
-  #internal #list .contents li {
+  #historyList .contents li,
+  #ceoList .contents li,
+  #testbrandList .contents li,
+  #brandList .contents li,
+  #internalList .contents li,
+  #foreignList .contents li {
     width: 50%;
   }
-  #step #list .contents li {
+  #stepList .contents li,
+  #briefingList .contents li,
+  #faqList .contents li,
+  #inquiryList .contents li {
     width: 25%;
   }
-  #event #list .contents li {
+  #eventList .contents li,
+  #recipeList .contents li,
+  #newsList .contents li {
     width: 33.3%;
   }
   /* 변경 */
@@ -1031,29 +1188,29 @@ h2 {
     line-height: 70px;
   }
 
-  #list {
+  .subList {
     text-align: center;
     font-weight: bold;
   }
-  #list .title {
+  .subList .title {
     height: 400px;
     line-height: 500px;
     overflow: hidden;
   }
-  #list .title p {
+  .subList .title p {
     font-size: 40px;
     color: #fff;
     text-shadow: 0 0 5px #000;
   }
-  #list .contents {
+  .subList .contents {
     border-bottom: 1px solid #ddd;
   }
-  #list .contents ul {
+  .subList .contents ul {
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
   }
-  #list .contents li {
+  .subList .contents li {
     float: left;
     height: 70px;
     font-size: 18px;
@@ -1062,223 +1219,231 @@ h2 {
     color: #333;
     border-right: 1px solid #ddd;
   }
-  #list .contents a:nth-child(1) li {
+  .subList .contents a:nth-child(1) li {
     border-left: 1px solid #ddd;
   }
 
-  #history section .container-fix {
+  #history .container-fix {
     height: 7900px;
   }
   #history .gray {
     padding-top: 90px;
   }
-  #history section .vertical {
+  #history .vertical {
     top: 27px;
   }
-  #history section .year {
+  #history .year {
     font-size: 40px;
   }
-  #history section .box:nth-child(2n) .year {
+  #history .box:nth-child(2n) .year {
     left: 0;
   }
-  #history section .box:nth-child(2n) .horizontal {
+  #history .box:nth-child(2n) .horizontal {
     left: 80%;
   }
-  #history section .contents {
+  #history .contents {
     margin-top: 20px;
     font-size: 16px;
     line-height: 30px;
   }
-  #history section .box:nth-child(2n) .contents {
+  #history .box:nth-child(2n) .contents {
     left: 0;
   }
-  #history section .box:nth-child(2n) .photo {
+  #history .box:nth-child(2n) .photo {
     left: 0;
   }
-  #history section .box:nth-child(3) {
+  #history .box:nth-child(3) {
     top: -300px;
   }
-  #history section .box:nth-child(4) {
+  #history .box:nth-child(4) {
     top: -350px;
   }
-  #history section .box:nth-child(5) {
+  #history .box:nth-child(5) {
     top: -650px;
   }
-  #history section .box:nth-child(6) {
+  #history .box:nth-child(6) {
     top: -700px;
   }
-  #history section .box:nth-child(7) {
+  #history .box:nth-child(7) {
     top: -1550px;
   }
-  #history section .box:nth-child(8) {
+  #history .box:nth-child(8) {
     top: -1500px;
   }
-  #history section .box:nth-child(9) {
+  #history .box:nth-child(9) {
     top: -2200px;
   }
-  #history section .box:nth-child(10) {
+  #history .box:nth-child(10) {
     top: -2300px;
   }
-  #history section .box:nth-child(11) {
+  #history .box:nth-child(11) {
     top: -2250px;
   }
-  #history section .box:nth-child(12) {
+  #history .box:nth-child(12) {
     top: -2700px;
   }
-  #history section .box:nth-child(13) {
+  #history .box:nth-child(13) {
     top: -3400px;
   }
-  #history section .box:nth-child(14) {
+  #history .box:nth-child(14) {
     top: -3600px;
   }
-  #history section .box:nth-child(15) {
+  #history .box:nth-child(15) {
     top: -4650px;
   }
-  #history section .box:nth-child(16) {
+  #history .box:nth-child(16) {
     top: -5000px;
   }
-  #history section .box:nth-child(17) {
+  #history .box:nth-child(17) {
     top: -5450px;
   }
 
-  #ceo section {
+  #ceo {
     margin-top: 0;
     background: linear-gradient(to right, rgb(5, 15, 145) 20%, transparent 20%);
   }
-  #ceo section .box {
+  #ceo .box {
     margin-bottom: 80px;
   }
-  #ceo section .wrap {
+  #ceo .wrap {
     order: 2;
     margin-top: 90px;
     margin-right: 0;
   }
-  #ceo section .bg {
+  #ceo .bg {
     order: 1;
   }
-  #ceo section .sign {
+  #ceo .sign {
     margin-bottom: 80px;
     font-size: 20px;
   }
-  #ceo section .sign img {
+  #ceo .sign img {
     width: 250px;
   }
-  #ceo section .bg {
+  #ceo .bg {
     height: 1456px;
   }
-  #ceo section .bg img {
+  #ceo .bg img {
     height: 50%;
     transform: translateX(30%);
   }
 
-  #testbrand section .gallery,
-  #brand section .gallery {
+  #testbrand .gallery,
+  #brand .gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  #testbrand section .title,
-  #brand section .title {
+  #testbrand .title,
+  #brand .title {
     margin-bottom: 90px;
   }
-  #testbrand section .box,
-  #brand section .box {
+  #testbrand .box,
+  #brand .box {
     margin-bottom: 60px;
   }
 
-  #internal section .map {
+  #foreign .map,
+  #internal .map {
     height: 700px;
   }
-  #internal section .search {
+  #foreign .search,
+  #internal .search {
     margin: 100px 0;
   }
-  #internal section .form-location {
+  #foreign .form-box,
+  #internal .form-box {
     float: left;
     width: 22.5%;
     margin: 0;
     margin-left: 4%;
   }
-  #internal section .form-location:nth-child(1) {
+  #foreign .form-box:nth-child(1),
+  #internal .form-box:nth-child(1) {
     width: 22.5%;
     margin-left: 0;
   }
-  #internal section .form-location:nth-child(2) {
+  #foreign .form-box:nth-child(2),
+  #internal .form-box:nth-child(2) {
     float: left;
     width: 22.5%;
     margin-left: 2%;
   }
-  #internal section .form-location p {
-    margin: 20px 0;
-  }
-  #internal section .form-location .form-control {
-    padding: 0 20px;
-  }
-  #internal section .form-location:nth-child(5) .form-control {
+  #foreign .form-box:nth-child(5) .form-control,
+  #internal .form-box:nth-child(5) .form-control {
     padding: 0 55px 0 20px;
   }
-  #internal section .fa-search {
+  #foreign .fa-search,
+  #internal .fa-search {
     padding: 0 15px;
   }
-  #internal section .list {
+  #foreign .list,
+  #internal .list {
     margin: 100px 0;
     line-height: 60px;
   }
-  #internal section .list .title li,
-  #internal section .list .contents li {
+  #foreign .list .title li,
+  #foreign .list .contents li,
+  #internal .list .title li,
+  #internal .list .contents li {
     width: 15%;
   }
-  #internal section .list .title li:nth-child(4),
-  #internal section .list .contents li:nth-child(4) {
+  #foreign .list .title li:nth-child(4),
+  #foreign .list .contents li:nth-child(4),
+  #internal .list .title li:nth-child(4),
+  #internal .list .contents li:nth-child(4) {
     width: 40%;
   }
-  #internal section .list .contents .detail {
+  #foreign .list .contents .detail,
+  #internal .list .contents .detail {
     padding: 30px;
   }
-  #internal section .list .contents .detail .wrap2 {
+  #foreign .list .contents .detail .wrap2,
+  #internal .list .contents .detail .wrap2 {
     padding: 30px 40px 30px;
   }
 
-  #step section .box {
+  #step .box {
     width: 23.5%;
     margin: 2% 0 0 2%;
   }
-  #step section .box:nth-child(2n + 1) {
+  #step .box:nth-child(2n + 1) {
     margin-left: 2%;
   }
-  #step section .box:nth-child(3n + 1) {
+  #step .box:nth-child(3n + 1) {
     margin-left: 2%;
   }
-  #step section .box:nth-child(4n + 1) {
+  #step .box:nth-child(4n + 1) {
     margin-left: 0;
   }
 
-  #event section {
+  #event {
     margin: 100px 0;
   }
-  #event section .box .logo img {
+  #event .box .logo img {
     height: 30px;
   }
-  #event section .box .text p {
+  #event .box .text p {
     font-size: 17px;
   }
 }
 @media (min-width: 1400px) {
-  #list .contents ul {
+  .subList .contents ul {
     max-width: 1320px;
   }
 
-  #step section .box {
+  #step .box {
     width: 18%;
     margin: 2.5% 0 0 2.5%;
   }
-  #step section .box:nth-child(2n + 1) {
+  #step .box:nth-child(2n + 1) {
     margin-left: 2.5%;
   }
-  #step section .box:nth-child(3n + 1) {
+  #step .box:nth-child(3n + 1) {
     margin-left: 2.5%;
   }
-  #step section .box:nth-child(4n + 1) {
+  #step .box:nth-child(4n + 1) {
     margin-left: 2.5%;
   }
-  #step section .box:nth-child(5n + 1) {
+  #step .box:nth-child(5n + 1) {
     margin-left: 0;
   }
 }

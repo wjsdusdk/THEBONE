@@ -1,69 +1,5 @@
 $(document).ready(function () {
-  // 피시 .nav
-
-  var $firstMenu = $(".nav > ul > li"),
-    $header = $("header"),
-    $headerHeight = $header.outerHeight();
-  // A.height() : A의 알맹이 높이
-  // A.innerHeight() : A의 패딩포함 높이
-  // A.outerHeight() : A의 보더포함 높이
-  // A.outerHeight(true) : A의 마진포함 높이
-  $firstMenu
-    .mouseenter(function () {
-      /* var currentMenu = $(this); */
-      var subHeight = $(this).find(".sub").outerHeight();
-
-      $header.stop().animate({ height: 100 + subHeight + "px" }, 300);
-      $(".sub").hide(); // 서브메뉴 안보이게 초기화
-      $(this).find(".sub").fadeIn(300);
-
-      /* setTimeout(function () {x
-                $("ul").hide(); // 서브메뉴 안보이게 초기화
-                currentMenu.find("ul").show(300); // .find() 특정 하위 요소를 찾을 때 사용
-            });
-            // setTimeout(할일, 시간); 할일 function(){} */
-    })
-    .mouseleave(function () {
-      $header.stop().animate({ height: 100 + "px" }, 300);
-      $(this).find(".sub").fadeOut(300);
-    });
-
-  $(window).resize(function () {
-    var w = $(window).width();
-    if (w < 576) {
-      $("header").css({ height: "50px" });
-    } else if (w < 768) {
-      $("header").css({ height: "60px" });
-    } else if (w < 992) {
-      $("header").css({ height: "70px" });
-    } else if (w < 1200) {
-      $("header").css({ height: "80px" });
-    } else {
-      $("header").css({ height: "100px" });
-    }
-  });
-
-  // 모바일, 태블릿 .menu
-
-  $(".icon_menu").click(function () {
-    $(".menu").css({ "min-width": "200px", width: "80%" });
-  });
-  $(".icon_x").click(function () {
-    $(".menu").css({ "min-width": "0", width: "0" });
-  });
-  $(".menu .title").click(function () {
-    $(this).parent().children(".sub").slideToggle();
-  });
-
-  // 하위메뉴 화살표
-
-  $(".icon_arrow_text")
-    .parent()
-    .click(function () {
-      $(this).children(".icon_arrow_text").toggleClass("on");
-    });
-
-  // 모바일,탭 #list
+  // 모바일,탭
 
   $("header .list > ul > li p span").click(function () {
     $("header .list ul ul").slideToggle();
@@ -81,7 +17,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "0",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
@@ -91,7 +27,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -103,7 +39,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "0",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
@@ -113,7 +49,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -125,7 +61,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "0",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
@@ -135,7 +71,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -147,7 +83,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "0",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
@@ -157,7 +93,7 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -166,14 +102,14 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -182,14 +118,14 @@ $(document).ready(function () {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "-10%",
         });
       } else {
         $("header .wrap h6").css({
           opacity: "1",
         });
-        $("#top .name").css({
+        $(".subTop .name").css({
           top: "50%",
         });
       }
@@ -215,17 +151,17 @@ $(document).ready(function () {
     }
   });
 
-  // 모바일,탭 #top
+  // 모바일,탭 .subTop
 
   $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
 
     if (scrollTop >= 50) {
-      $("#top .photo").css({
+      $(".subTop .photo").css({
         opacity: "1",
       });
     } else {
-      $("#top .photo").css({
+      $(".subTop .photo").css({
         opacity: "0.5",
       });
     }
@@ -235,22 +171,15 @@ $(document).ready(function () {
       var scrollTop = $(this).scrollTop();
 
       if (scrollTop >= 50) {
-        $("#top .photo").css({
+        $(".subTop .photo").css({
           opacity: "1",
         });
       } else {
-        $("#top .photo").css({
+        $(".subTop .photo").css({
           opacity: "0.5",
         });
       }
     });
-  });
-
-  // 국내매장 internal.html
-  // .list의 하위메뉴
-
-  $("#internal section .list .contents .wrap").click(function () {
-    $(this).parent().children(".detail").slideToggle();
   });
 });
 
@@ -294,6 +223,27 @@ function locationKindChange(e) {
   else if (e.value == "경상남도") var d = gyeongsangnam;
   else if (e.value == "제주특별자치도") var d = jeju;
   else if (e.value == "세종특별자치시") var d = sejong;
+
+  target.options.length = 0;
+
+  for (x in d) {
+    var option = document.createElement("option");
+    option.value = d[x];
+    option.innerHTML = d[x];
+    target.appendChild(option);
+  }
+}
+
+// 창업문의 form
+function foundationKindChange(e) {
+  var select = ["브랜드 선택"];
+  var internal = ["고투웍", "연돈볼카츠", "빽보이피자", "한신포차", "성성식당", "돌배기집", "롤링파스타", "리춘시장", "막이오름", "본가", "역전우동0410", "원조쌈밥집", "인생설렁탕", "새마을식당", "빽다방", "백철판0410", "백스비어", "미정국수0410", "홍콩반점", "빽다방 빵연구소", "제순식당", "기타"];
+  var foreign = ["백&apos;s 비빔밥", "백&apos;s 비어", "백철판", "본가", "본가익스프레스", "홍콩반점", "한신포차", "빽다방", "새마을식당", "기타"];
+  var target = document.getElementById("foundation2");
+
+  if (e.value == "국가") var d = select;
+  else if (e.value == "국내") var d = internal;
+  else if (e.value == "해외") var d = foreign;
 
   target.options.length = 0;
 
