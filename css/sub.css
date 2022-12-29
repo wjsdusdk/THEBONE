@@ -656,11 +656,13 @@ h2 {
   border: none;
   border-bottom: 1px solid #888;
 }
-#inquiry .form-box:nth-child(1) .form-control:nth-child(2) {
+#inquiry .form-box:nth-child(1) .form-control:nth-child(2),
+#inquiry .form-box:nth-child(5) .form-control:nth-child(2) {
   float: left;
   width: 48%;
 }
-#inquiry .form-box:nth-child(1) .form-control:nth-child(3) {
+#inquiry .form-box:nth-child(1) .form-control:nth-child(3),
+#inquiry .form-box:nth-child(5) .form-control:nth-child(3) {
   float: right;
   width: 48%;
 }
@@ -682,13 +684,30 @@ h2 {
   text-align: center;
   color: #888;
 }
+#inquiry #store_y {
+  margin-left: 20px;
+}
+#inquiry .form_click {
+  margin: 10px 0;
+  font-size: 15px;
+}
+#inquiry .post {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #888;
+  border: 0;
+  border-radius: 5px;
+}
 #inquiry .form-box:nth-child(7) .form-control {
   height: auto;
   padding: 10px;
   border: 1px solid #888;
 }
 #inquiry .btn {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 #inquiry .btn p {
   width: 100px;
@@ -1011,6 +1030,19 @@ h2 {
   }
   #step .box p:nth-child(3) {
     font-size: 15px;
+  }
+
+  #inquiry .border {
+    padding: 70px;
+    border: 3px solid #eee;
+    border-radius: 10px;
+  }
+  #inquiry .form-box:nth-child(1) .form-control:nth-child(2),
+  #inquiry .form-box:nth-child(5) .form-control:nth-child(2) {
+    margin-right: 3.5%;
+  }
+  #inquiry .form_block {
+    padding-top: 20px;
   }
 
   #event .box .photo::after {
@@ -1413,6 +1445,19 @@ h2 {
   }
   #step .box:nth-child(4n + 1) {
     margin-left: 0;
+  }
+
+  #inquiry .post {
+    float: left;
+    width: 13%;
+    margin-right: 3.5%;
+  }
+  #inquiry .form_block input {
+    float: left;
+    width: 40%;
+  }
+  #inquiry #store_adr1 {
+    margin-right: 3.5%;
   }
 
   #event {

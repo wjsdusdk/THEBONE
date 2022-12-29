@@ -181,6 +181,17 @@ $(document).ready(function () {
       }
     });
   });
+
+  /*  */
+
+  $("input[name='store_field']").on("click",function(){
+    if($("input[name='store_field']:checked").val() == "Y"){$(".form_block").css("display","block");}
+    else{$(".form_block").css("display","none");}
+  });
+
+  $(".post").on("click",function(){
+    openDaumZipAddress();
+  });
 });
 
 // 매장찾기 form

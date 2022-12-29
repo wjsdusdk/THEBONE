@@ -7,6 +7,7 @@
   <title>더본코리아</title>
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/sub.css">
+  <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -118,7 +119,7 @@
             <ul class="sub">
               <li><a href="event.html">이벤트</a></li>
               <li><a href="recipe.html">레시피</a></li>
-              <li><a href="news.html">소식</a></li>ㅉ
+              <li><a href="news.html">소식</a></li>
             </ul>
           </li>
         </ul>
@@ -126,12 +127,12 @@
     </div>
   </header>
 
-  <div id="stepTop" class="subTop delete_xl background-black">
+  <div id="briefingTop" class="subTop delete_xl background-black">
     <div class="photo"></div>
     <div class="name">창업설명회</div>
   </div>
 
-  <div id="stepList" class="subList delete block_xl">
+  <div id="briefingList" class="subList delete block_xl">
     <div class="title">
       <p>창업안내</p>
     </div>
@@ -153,265 +154,313 @@
     </div>
   </div>
 
-<section id="step"></section>
+  <section id="briefing" class="container">
+    <main class="cd-main-content">
 
-  <div id="container" class="cate container">
-    <section>
-      <div class="content founded">
-        <div>
-          <div class="tab-area">
-            <div class="tab-con on">
-              <div class="register">
-                <div>
-                  <div class="table-wrap">
-                    <div class="table-area">
-                      <div class="tbl row nt">
-                        <form method="post" name="frmInquiry">
-                          <ul>
-                            <li>
-                              <dl>
-                                <dd class="title">브랜드 선택<b>*</b></dd>
-                                <dd>
-                                  <div class="selectBox w100per">
-                                    <select name="request_country" id="request_country">
-                                      <option value="1" selected>국내</option>
-                                      <option value="2">해외</option>
-                                    </select>
-                                    <label>국내</label>
-                                  </div>
-                                </dd>
-                                <dd>
-                                  <div class="selectBox w100per">
-                                    <select name="request_brand1" id="request_brand1">
-                                      <option value="" selected>브랜드를 선택해 주세요.</option>
-                                      <option value="53">고투웍</option>
-                                      <option value="51">연돈볼카츠</option>
-                                      <option value="52">빽보이피자</option>
-                                      <option value="40">한신포차</option>
-                                      <option value="35">성성식당</option>
-                                      <option value="1">돌배기집</option>
-                                      <option value="2">롤링파스타</option>
-                                      <option value="3">리춘시장</option>
-                                      <option value="4">막이오름</option>
-                                      <option value="32">본가</option>
-                                      <option value="36">역전우동0410</option>
-                                      <option value="37">원조쌈밥집</option>
-                                      <option value="38">인생설렁탕</option>
-                                      <option value="34">새마을식당</option>
-                                      <option value="33">빽다방</option>
-                                      <option value="31">백철판0410</option>
-                                      <option value="30">백스비어</option>
-                                      <option value="29">미정국수0410</option>
-                                      <option value="41">홍콩반점</option>
-                                      <option value="48">빽다방 빵연구소</option>
-                                      <option value="49">제순식당</option>
-                                      <option value="50">기타</option>
-                                    </select>
-                                    <select name="request_brand2" id="request_brand2" style="display:none;">
-                                      <option value="" selected>브랜드를 선택해주세요</option>
-                                      <option value="6">백&apos;s 비빔밥</option>
-                                      <option value="7">백&apos;s 비어</option>
-                                      <option value="8">백철판</option>
-                                      <option value="9">본가</option>
-                                      <option value="10">본가익스프레스</option>
-                                      <option value="46">홍콩반점</option>
-                                      <option value="45">한신포차</option>
-                                      <option value="43">빽다방</option>
-                                      <option value="42">새마을식당</option>
-                                      <option value="47">기타</option>
-                                    </select>
-                                    <label>브랜드를 선택해 주세요.</label>
-                                  </div>
-                                </dd>
-                              </dl>
-                            </li>
-                            <li>
-                              <dl>
-                                <dd class="title">이름<b>*</b></dd>
-                                <dd>
-                                  <input type="text" id="request_name" name="request_name" required="" maxlength="50">
-                                </dd>
-                            </li>
-                            <li id="form_cellphpone1">
-                              <dl>
-                                <dd class="title">휴대폰 번호<b>*</b></dd>
-                                <dd class="phone-input">
-                                  <div class="selectBox w180">
-                                    <select name="request_cellphone1" id="request_cellphone1">
-                                      <option value="" disabled>선택</option>
-                                      <option value="010" selected>010</option>
-                                      <option value="011">011</option>
-                                      <option value="016">016</option>
-                                      <option value="016">017</option>
-                                      <option value="016">018</option>
-                                      <option value="019">019</option>
-                                    </select>
-                                    <label>010</label>
-                                  </div>
-                                  &nbsp;
-                                  <input class="w180" type="number" pattern="[0-9]" id="request_cellphone2"
-                                    name="request_cellphone2" required="" maxlength="4">
-                                  &nbsp;
-                                  <input class="w180" type="number" pattern="[0-9]" id="request_cellphone3"
-                                    name="request_cellphone3" required="" maxlength="4">
-                                </dd>
-                              </dl>
-                            </li>
-                            <li id="form_cellphpone2" style="display:none">
-                              <dl>
-                                <dd class="title">휴대폰 번호<b>*</b></dd>
-                                <dd class="phone-input">
-                                  <input type="number" id="request_cellphone21" name="request_cellphone21" required=""
-                                    maxlength="30">
-                                </dd>
-                              </dl>
-                            </li>
-                            <li>
-                              <dl>
-                                <dd class="title">이메일<b>*</b></dd>
-                                <dd style="white-space: nowrap;"><input class="w268" type="text" name="form_email1"
-                                    id="form_email1" value=""> @ <input class="w268" type="text" name="form_email2"
-                                    id="form_email2" value=""></dd>
-                                <dd>
-                                  <div class="selectBox w100per">
-                                    <select id="form_email_domain">
-                                      <option value="" selected>직접입력</option>
-                                      <option value="naver.com">네이버</option>
-                                      <option value="daum.net">다음</option>
-                                      <option value="gmail.com">구글</option>
-                                    </select>
-                                    <label>직접입력</label>
-                                  </div>
-                                </dd>
-                              </dl>
-                            </li>
-                            <li id="form_block2_1">
-                              <dl>
-                                <dd class="title">창업희망지역<b>*</b></dd>
-                                <dd>
-                                  <div class="selectBox w100per">
-                                    <select name="form_local1" id="form_local1">
-                                      <option disabled="disabled">지역선택</option>
-                                    </select>
-                                    <label>지역선택</label>
-                                  </div>
-                                </dd>
-                                <dd>
-                                  <div class="selectBox w100per">
-                                    <select name="form_local2" id="form_local2">
-                                      <option disabled="disabled">시/구선택</option>
-                                    </select>
-                                    <label>시/구선택</label>
-                                  </div>
-                                </dd>
-                              </dl>
-                            </li>
-
-                            <li id="form_block2_1_2" style="display:none;">
-                              <dl>
-                                <dd class="title">창업희망지역<b>*</b></dd>
-                                <dd style="white-space: nowrap;">국가 <input class="w268" type="text" name="bi_place11"
-                                    id="bi_place11" /></dd>
-                                <dd style="white-space: nowrap;">지역 <input class="w268" type="text" name="bi_place12"
-                                    id="bi_place12" /></dd>
-                              </dl>
-                            </li>
-
-                            <li id="form_block2_2">
-                              <dl>
-                                <dd class="title">입점희망 점포<b>*</b></dd>
-                                <dd>
-                                  <input type="radio" value="N" name="store_field" id="store_n"><label
-                                    for="store_n">&nbsp;</label><label for="store_n">없음</label>
-                                  <input type="radio" value="Y" name="store_field" id="store_y" checked="checked"><label
-                                    for="store_y">&nbsp;</label><label for="store_y">있음</label>
-                                </dd>
-                                <dd id="form_block2_3">
-                                  <button class="post-btn">우편번호 찾기</button>
-                                  <input class="w100per" type="text" name="store_adr1" id="store_adr1" readonly>
-                                  <input class="w100per" type="text" name="store_adr2" id="store_adr2">
-                                </dd>
-                              </dl>
-                            </li>
-                            <li>
-                              <dl>
-                                <dd class="title">추가 정보 입력</dd>
-                                <dd>
-                                  <div class="textarea-wrap"><textarea cols="30" rows="4" name="addinfo"
-                                      placeholder="점포를 보유하셨거나 입점희망 점포에 대한 사전정보가 있을 경우, 점포의 평수/임대료 등 구체적인 정보를 남겨주시면 조금 더 정확한 상담이 가능합니다. 그 외, 추가문의 사항이 있는 경우 남겨주세요!"
-                                      onkeyup="javascript:CH_StrByte(this,200,document.getElementById('xWordCnt'));"></textarea>
-                                  </div>
-                                  <p class="index-check">현재 <b id="xWordCnt">0</b> / 최대 200byte (한글100자, 영문200자)</p>
-                                </dd>
-                              </dl>
-                            </li>
-                            <li>&nbsp;</li>
-                            <li>
-                              <dl>
-                                <dd class="title v-align-t">개인정보 보호를 위한 이용자 동의서<br><a
-                                    href="https://www.theborn.co.kr/agreement/" target="_blank">개인정보 처리방침 전문보기</a></dd>
-                                <dd>
-                                  <div class="agree-info">
-                                    <p>
-                                      더본코리아 창업문의 및 설명회 신청 관련 개인정보 수집동의 <span style="color:red;">(필수)</span><br>
-                                      1. 개인정보의 수집 및 이용 목적<br>
-                                      - 더본코리아 브랜드 창업 문의에 대한 원활한 상담<br>
-                                      - 더본코리아 창업 관련 정보 안내<br>
-                                      2. 수집하는 개인정보의 항목<br>
-                                      - 이름, 휴대폰번호, 이메일, 창업희망지역, 점포소유여부(보유 시, 점포주소지)<br>
-                                      3. 개인정보 보유 및 이용기간<br>
-                                      - 이용 목적 달성 후, 내부규정에 따라 보관 및 지체없이 파기<br>
-                                      ※귀하께서는 위 개인정보 수집, 이용에 대한 동의를 거부할 권리가 있으며, 동의 거부 시에는 창업상담 서비스 이용에 제한이 될 수 있습니다.
-                                    </p>
-                                  </div>
-                                  <input type="radio" value="1" name="person_field" id="person_y"><label
-                                    for="person_y">&nbsp;</label><label for="person_y">동의합니다.</label>
-                                  <input type="radio" value="0" name="person_field" id="person_n"><label
-                                    for="person_n">&nbsp;</label><label for="person_n">동의하지 않습니다.</label>
-                                </dd>
-                              </dl>
-                            </li>
-                            <li id="agree2">
-                              <dl>
-                                <dd class="title v-align-t">마케팅 활용 동의서<br><a href="https://www.theborn.co.kr/agreement/"
-                                    target="_blank">마케팅 활용 동의서 보기</a></dd>
-                                <dd>
-                                  <div class="agree-info">
-                                    <p>
-                                      마케팅 정보제공 용도로의 이용 동의 <span style="color:red;">(선택)</span><br>
-                                      수집한 위 개인정보를 더본코리아에서 제공하는 창업관련 자료 및 정보수신에 동의합니다.<br>
-                                      ※선택 사항 미 동의에 따른 상담서비스 이용 제한, 불이익은 없습니다.<br>
-                                      다만, 더본코리아에서 제공하는 창업자료 및 제안정보 등은 제공받으실 수 없습니다.
-                                    </p>
-                                  </div>
-                                  <input type="radio" value="1" name="marketing_field" id="marketing_y"><label
-                                    for="marketing_y">&nbsp;</label><label for="marketing_y">동의합니다.</label>
-                                  <input type="radio" value="0" name="marketing_field" id="marketing_n"><label
-                                    for="marketing_n">&nbsp;</label><label for="marketing_n">동의하지 않습니다.</label>
-                                </dd>
-                              </dl>
-                            </li>
-                          </ul>
-                        </form>
-                      </div>
-
-                      <div class="btn-wrap">
-                        <a class="reg" id="btn_submit">문의 등록</a><a class="cancel" id="btn_cancle">취소</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="cd-filter">
+        <form>
+          <div class="cd-filter-block">
+            <h4>검색</h4>
+            <div class="cd-filter-content">
+              <input type="search" placeholder="한신포차...">
             </div>
           </div>
 
-        </div>
+          <div class="cd-tab-filter-wrapper">
+            <div class="cd-tab-filter">
+              <ul class="cd-filters">
+                <li class="placeholder">
+                  <a data-type="all" href="#0">All</a>
+                </li>
+                <li class="filter"><a class="selected" href="#0" data-type="all">전체</a></li>
+                <li class="filter" data-filter=".date-1"><a href="#0" data-type="date-1">2023년 2월</a></li>
+                <li class="filter" data-filter=".date-2"><a href="#0" data-type="date-2">2023년 3월</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cd-filter-block">
+            <h4>위치</h4>
+            <ul class="cd-filter-content cd-filters list">
+              <li>
+                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                <label class="checkbox-label" for="checkbox1">서울·수도권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                <label class="checkbox-label" for="checkbox2">대전·중부권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                <label class="checkbox-label" for="checkbox3">광주·호남권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
+                <label class="checkbox-label" for="checkbox4">부산·영남권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
+                <label class="checkbox-label" for="checkbox5">대구·영남권</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cd-filter-block">
+            <h4>브랜드</h4>
+            <div class="cd-filter-content">
+              <div class="cd-select cd-filters">
+                <select class="filter" name="selectThis" id="selectThis">
+                  <option value="">전체</option>
+                  <option value=".option1">역전우동0410</option>
+                  <option value=".option2">백스비어</option>
+                  <option value=".option3">미정국수0410</option>
+                  <option value=".option4">돌배기집</option>
+                  <option value=".option5">빽다방</option>
+                  <option value=".option6">한신포차</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <a href="#0" class="cd-close">닫기</a>
       </div>
-    </section>
 
+      <div class="cd-gallery">
+        <ul>
+          <li class="mix date-1 check3 option6">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>광주·호남권</p>
+                <p>한신포차</p>
+                <p>일시: 2023.02.03 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-1 check4 option5">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>부산·영남권</p>
+                <p>빽다방</p>
+                <p>일시: 2023.02.04 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-1 check5 option4">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>대구·영남권</p>
+                <p>돌배기집</p>
+                <p>일시: 2023.02.10 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-1 check1 option3">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>서울·수도권</p>
+                <p>미정국수0410</p>
+                <p>일시: 2023.02.11 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-1 check2 option2">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>대전·중부권</p>
+                <p>백스비어</p>
+                <p>일시: 2023.02.17 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-1 check3 option1">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>광주·호남권</p>
+                <p>역전우동0410</p>
+                <p>일시: 2023.02.18 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check4 option2">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>부산·영남권</p>
+                <p>백스비어</p>
+                <p>일시: 2023.03.03 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check5 option3">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>대구·영남권</p>
+                <p>미정국수0410</p>
+                <p>일시: 2023.03.04 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check1 option4">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>서울·수도권</p>
+                <p>돌배기집</p>
+                <p>일시: 2023.03.10 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check2 option5">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>대전·중부권</p>
+                <p>빽다방</p>
+                <p>일시: 2023.03.11 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check3 option6">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>광주·호남권</p>
+                <p>한신포차</p>
+                <p>일시: 2023.03.17 (금) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="mix date-2 check4 option1">
+            <div class="box scroll">
+              <div class="photo rectangle"></div>
+              <div class="wrap">
+                <p>부산·영남권</p>
+                <p>역전우동0410</p>
+                <p>일시: 2023.03.18 (토) 14:00 ~</p>
+                <p>장소: 더본코리아 창업설명회장</p>
+                <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
+                <a class="view" href="javascript:void(0);">신청하기</a>
+              </div>
+            </div>
+          </li>
+          <li class="gap"></li>
+          <li class="gap"></li>
+          <li class="gap"></li>
+        </ul>
+        <div class="cd-fail-message">등록된 설명회가 없습니다.</div>
+      </div>
 
-    <div class="dim-all"></div>
-  </div>
+      <!-- <div class="cd-filter">
+        <form>
+          <div class="cd-filter-block">
+            <h4>검색</h4>
+            <div class="cd-filter-content">
+              <input type="search" placeholder="한신포차...">
+            </div>
+          </div>
+
+          <div class="cd-tab-filter-wrapper">
+            <div class="cd-tab-filter">
+              <ul class="cd-filters">
+                <li class="placeholder">
+                  <a data-type="all" href="#0">All</a>
+                </li>
+                <li class="filter"><a class="selected" href="#0" data-type="all">전체</a></li>
+                <li class="filter" data-filter=".date-1"><a href="#0" data-type="date-1">2023년 2월</a></li>
+                <li class="filter" data-filter=".date-2"><a href="#0" data-type="date-2">2023년 3월</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cd-filter-block">
+            <h4>위치</h4>
+            <ul class="cd-filter-content cd-filters list">
+              <li>
+                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                <label class="checkbox-label" for="checkbox1">서울·수도권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                <label class="checkbox-label" for="checkbox2">대전·중부권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                <label class="checkbox-label" for="checkbox3">광주·호남권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
+                <label class="checkbox-label" for="checkbox4">부산·영남권</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
+                <label class="checkbox-label" for="checkbox5">대구·영남권</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cd-filter-block">
+            <h4>브랜드</h4>
+            <div class="cd-filter-content">
+              <div class="cd-select cd-filters">
+                <select class="filter" name="selectThis" id="selectThis">
+                  <option value="">전체</option>
+                  <option value=".option1">역전우동0410</option>
+                  <option value=".option2">백스비어</option>
+                  <option value=".option3">미정국수0410</option>
+                  <option value=".option4">돌배기집</option>
+                  <option value=".option5">빽다방</option>
+                  <option value=".option6">한신포차</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <a href="#0" class="cd-close">닫기</a>
+      </div> -->
+
+      <a href="#0" class="cd-filter-trigger">필터</a>
+    </main>
+  </section>
 
   <footer>
     <div class="container-xl reset">
@@ -464,26 +513,12 @@
 
 
 
-  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-  <script>
-    function openDaumZipAddress() {
-      //load함수를 이용하여 core스크립트의 로딩이 완료된 후, 우편번호 서비스를 실행합니다.
-      daum.postcode.load(function () {
-        new daum.Postcode({
-          oncomplete: function (data) {
-            addressSetting(data);
-          }
-        }).open();
-      });
-    }
-  </script>
-
-
-
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
-  <script src="js/step_scroll.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/briefing_filter.js"></script>
+  <script src="js/modernizr.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT7sSTMO5sgyqu_1l0KuaIK_QAyv0U44c&callback=initMap&libraries=&v=weekly"
     async></script>

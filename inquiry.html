@@ -155,9 +155,9 @@
 
   <section id="inquiry">
     <div class="container">
-      <div class="reset">
-        <div class="form-box reset">
-          <p>브랜드 선택 <span class="red">*</span></p>
+      <div class="border reset">
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">브랜드 선택 <span class="red">*</span></p>
           <select class="form-control" onchange="foundationKindChange(this)">
             <option value="국가">국가 선택</option>
             <option value="국내">국내</option>
@@ -167,12 +167,12 @@
             <option>브랜드 선택</option>
           </select>
         </div>
-        <div class="form-box reset">
-          <p>이름 <span class="red">*</span></p>
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">이름 <span class="red">*</span></p>
           <input type="text" placeholder="" class="form-control">
         </div>
-        <div class="form-box reset">
-          <p>휴대폰 번호 <span class="red">*</span></p>
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">휴대폰 번호 <span class="red">*</span></p>
           <select name="cellphone1" id="cellphone1" class="form-control">
             <option value="" disabled>선택</option>
             <option value="010" selected>010</option>
@@ -187,29 +187,56 @@
           <input type="number" pattern="[0-9]" id="cellphone3" class="form-control" name="cellphone3" required=""
             maxlength="4">
         </div>
-        <div class="form-box reset">
-          <p>이메일 <span class="red">*</span></p>
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">이메일 <span class="red">*</span></p>
           <input type="text" name="email1" id="email1" class="form-control" value="">
           <p> @ </p>
           <input type="text" name="email2" id="email2" class="form-control" value="">
         </div>
-        <div class="form-box reset">
-          <p>창업희망지역 <span class="red">*</span></p>
-          <select class="form-control" onchange="foundationKindChange(this)">
-            <option value="국가">국가 선택</option>
-            <option value="국내">국내</option>
-            <option value="해외">해외</option>
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">창업희망지역 <span class="red">*</span></p>
+          <select class="form-control" id="location1" name="location1" onchange="locationKindChange(this)">
+            <option value="시/도">시/도</option>
+            <option value="서울특별시">서울특별시</option>
+            <option value="부산광역시">부산광역시</option>
+            <option value="대구광역시">대구광역시</option>
+            <option value="인천광역시">인천광역시</option>
+            <option value="광주광역시">광주광역시</option>
+            <option value="대전광역시">대전광역시</option>
+            <option value="울산광역시">울산광역시</option>
+            <option value="경기도">경기도</option>
+            <option value="강원도">강원도</option>
+            <option value="충청북도">충청북도</option>
+            <option value="충청남도">충청남도</option>
+            <option value="전라북도">전라북도</option>
+            <option value="전라남도">전라남도</option>
+            <option value="경상북도">경상북도</option>
+            <option value="경상남도">경상남도</option>
+            <option value="제주특별자치도">제주특별자치도</option>
+            <option value="세종특별자치시">세종특별자치시</option>
           </select>
-          <select class="form-control" id="foundation2" name="foundation2">
-            <option>브랜드 선택</option>
+          <select class="form-control" id="location2" name="location2">
+            <option>시/군/구</option>
           </select>
         </div>
-        <div class="form-box reset">
-          <p>입점희망 점포 <span class="red">*</span></p>
-          <input type="text" placeholder="" class="form-control">
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">입점희망 점포 <span class="red">*</span></p>
+          <div class="col-75_md">
+            <div class="form_click">
+              <input type="radio" value="N" name="store_field" id="store_n"><label for="store_n">&nbsp;</label><label
+                for="store_n">없음</label>
+              <input type="radio" value="Y" name="store_field" id="store_y" checked="checked"><label
+                for="store_y">&nbsp;</label><label for="store_y">있음</label>
+            </div>
+            <div class="form_block">
+              <button class="post">우편번호 찾기</button>
+              <input class="form-control" type="text" name="store_adr1" id="store_adr1" readonly>
+              <input class="form-control" type="text" name="store_adr2" id="store_adr2">
+            </div>
+          </div>
         </div>
-        <div class="form-box reset">
-          <p>추가 정보 입력</p>
+        <div class="form-box reset flex_md">
+          <p class="col-25_md">추가 정보 입력</p>
           <textarea cols="30" rows="6" name="addinfo" class="form-control"
             placeholder="점포를 보유하셨거나 입점희망 점포에 대한 사전정보가 있을 경우, 점포의 평수/임대료 등 구체적인 정보를 남겨주시면 조금 더 정확한 상담이 가능합니다. 그 외, 추가문의 사항이 있는 경우 남겨주세요!"></textarea>
         </div>
@@ -269,6 +296,21 @@
       </div>
     </div>
   </footer>
+
+
+
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script>
+    function openDaumZipAddress() {
+      daum.postcode.load(function () {
+        new daum.Postcode({
+          oncomplete: function (data) {
+            addressSetting(data);
+          }
+        }).open();
+      });
+    }
+  </script>
 
 
 
