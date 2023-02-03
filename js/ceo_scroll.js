@@ -6,24 +6,7 @@ $(document).ready(function () {
     if (w < 576) {
       for (n = 0; n <= 5; n++) {
         var offset = $(".scroll").eq(n).offset().top;
-        if (scrollTop + 500 >= offset) {
-          $(".scroll").eq(n).css({
-            opacity: "1",
-            top: "0",
-            transition: "all 0.5s",
-          });
-        } else {
-          $(".scroll").eq(n).css({
-            opacity: "0",
-            top: "30px",
-            transition: "all 0.5s",
-          });
-        }
-      }
-    } else if (w < 768) {
-      for (n = 0; n <= 5; n++) {
-        var offset = $(".scroll").eq(n).offset().top;
-        if (scrollTop + 800 >= offset) {
+        if (scrollTop + 700 >= offset) {
           $(".scroll").eq(n).css({
             opacity: "1",
             top: "0",
@@ -74,7 +57,7 @@ $(document).ready(function () {
     } else {
       for (n = 0; n <= 5; n++) {
         var offset = $(".scroll").eq(n).offset().top;
-        if (scrollTop + 800 >= offset) {
+        if (scrollTop + 1100 >= offset) {
           $(".scroll").eq(n).css({
             opacity: "1",
             top: "0",

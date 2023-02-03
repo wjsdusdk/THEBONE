@@ -7,7 +7,7 @@
   <title>더본코리아</title>
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/sub.css">
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/filter.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -156,79 +156,48 @@
 
   <section id="briefing" class="container">
     <main class="cd-main-content">
-
       <div class="cd-filter">
+        
+      <div class="px-20 sm-mb-60 md-mb-70 lg-mb-80 xl-mb-90">
+        <h2>창업설명회</h2>
+        <h1>효과적인 상담을 위해, 창업설명회는 예약제로만 운영합니다.</h1>
+      </div>
         <form>
-          <div class="cd-filter-block">
-            <h4>검색</h4>
-            <div class="cd-filter-content">
-              <input type="search" placeholder="한신포차...">
-            </div>
-          </div>
-
-          <div class="cd-tab-filter-wrapper">
-            <div class="cd-tab-filter">
-              <ul class="cd-filters">
-                <li class="placeholder">
-                  <a data-type="all" href="#0">All</a>
-                </li>
-                <li class="filter"><a class="selected" href="#0" data-type="all">전체</a></li>
-                <li class="filter" data-filter=".date-1"><a href="#0" data-type="date-1">2023년 2월</a></li>
-                <li class="filter" data-filter=".date-2"><a href="#0" data-type="date-2">2023년 3월</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="cd-filter-block">
-            <h4>위치</h4>
-            <ul class="cd-filter-content cd-filters list">
+          <div class="cd-filter-block reset">
+            <h4>브랜드</h4>
+            <ul class="cd-filter-content cd-filters list reset">
               <li>
-                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                <label class="checkbox-label" for="checkbox1">서울·수도권</label>
+                <input class="filter" data-filter=".brand1" type="checkbox" id="brandbox1">
+                <label class="checkbox-label" for="brandbox1">역전우동0410</label>
               </li>
               <li>
-                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                <label class="checkbox-label" for="checkbox2">대전·중부권</label>
+                <input class="filter" data-filter=".brand2" type="checkbox" id="brandbox2">
+                <label class="checkbox-label" for="brandbox2">백스비어</label>
               </li>
               <li>
-                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                <label class="checkbox-label" for="checkbox3">광주·호남권</label>
+                <input class="filter" data-filter=".brand3" type="checkbox" id="brandbox3">
+                <label class="checkbox-label" for="brandbox3">미정국수0410</label>
               </li>
               <li>
-                <input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
-                <label class="checkbox-label" for="checkbox4">부산·영남권</label>
+                <input class="filter" data-filter=".brand4" type="checkbox" id="brandbox4">
+                <label class="checkbox-label" for="brandbox4">돌배기집</label>
               </li>
               <li>
-                <input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
-                <label class="checkbox-label" for="checkbox5">대구·영남권</label>
+                <input class="filter" data-filter=".brand5" type="checkbox" id="brandbox5">
+                <label class="checkbox-label" for="brandbox5">빽다방</label>
+              </li>
+              <li>
+                <input class="filter" data-filter=".brand6" type="checkbox" id="brandbox6">
+                <label class="checkbox-label" for="brandbox6">한신포차</label>
               </li>
             </ul>
           </div>
-
-          <div class="cd-filter-block">
-            <h4>브랜드</h4>
-            <div class="cd-filter-content">
-              <div class="cd-select cd-filters">
-                <select class="filter" name="selectThis" id="selectThis">
-                  <option value="">전체</option>
-                  <option value=".option1">역전우동0410</option>
-                  <option value=".option2">백스비어</option>
-                  <option value=".option3">미정국수0410</option>
-                  <option value=".option4">돌배기집</option>
-                  <option value=".option5">빽다방</option>
-                  <option value=".option6">한신포차</option>
-                </select>
-              </div>
-            </div>
-          </div>
         </form>
-        <a href="#0" class="cd-close">닫기</a>
       </div>
 
       <div class="cd-gallery">
         <ul>
-          <li class="mix date-1 check3 option6">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location3 brand6">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>광주·호남권</p>
@@ -238,10 +207,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-1 check4 option5">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location4 brand5">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>부산·영남권</p>
@@ -251,10 +218,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-1 check5 option4">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location5 brand4">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>대구·영남권</p>
@@ -264,10 +229,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-1 check1 option3">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location1 brand3">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>서울·수도권</p>
@@ -277,10 +240,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-1 check2 option2">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location2 brand2">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>대전·중부권</p>
@@ -290,10 +251,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-1 check3 option1">
-            <div class="box scroll">
+          <li class="box scroll mix date1 location3 brand1">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>광주·호남권</p>
@@ -303,10 +262,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check4 option2">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location4 brand2">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>부산·영남권</p>
@@ -316,10 +273,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check5 option3">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location5 brand3">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>대구·영남권</p>
@@ -329,10 +284,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check1 option4">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location1 brand4">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>서울·수도권</p>
@@ -342,10 +295,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check2 option5">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location2 brand5">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>대전·중부권</p>
@@ -355,10 +306,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check3 option6">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location3 brand6">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>광주·호남권</p>
@@ -368,10 +317,8 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
-          <li class="mix date-2 check4 option1">
-            <div class="box scroll">
+          <li class="box scroll mix date2 location4 brand1">
               <div class="photo rectangle"></div>
               <div class="wrap">
                 <p>부산·영남권</p>
@@ -381,7 +328,6 @@
                 <p>서울특별시 서초구 강남대로79길 52-12, 신곡빌딩 2층</p>
                 <a class="view" href="javascript:void(0);">신청하기</a>
               </div>
-            </div>
           </li>
           <li class="gap"></li>
           <li class="gap"></li>
@@ -390,75 +336,6 @@
         <div class="cd-fail-message">등록된 설명회가 없습니다.</div>
       </div>
 
-      <!-- <div class="cd-filter">
-        <form>
-          <div class="cd-filter-block">
-            <h4>검색</h4>
-            <div class="cd-filter-content">
-              <input type="search" placeholder="한신포차...">
-            </div>
-          </div>
-
-          <div class="cd-tab-filter-wrapper">
-            <div class="cd-tab-filter">
-              <ul class="cd-filters">
-                <li class="placeholder">
-                  <a data-type="all" href="#0">All</a>
-                </li>
-                <li class="filter"><a class="selected" href="#0" data-type="all">전체</a></li>
-                <li class="filter" data-filter=".date-1"><a href="#0" data-type="date-1">2023년 2월</a></li>
-                <li class="filter" data-filter=".date-2"><a href="#0" data-type="date-2">2023년 3월</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="cd-filter-block">
-            <h4>위치</h4>
-            <ul class="cd-filter-content cd-filters list">
-              <li>
-                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                <label class="checkbox-label" for="checkbox1">서울·수도권</label>
-              </li>
-              <li>
-                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                <label class="checkbox-label" for="checkbox2">대전·중부권</label>
-              </li>
-              <li>
-                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                <label class="checkbox-label" for="checkbox3">광주·호남권</label>
-              </li>
-              <li>
-                <input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
-                <label class="checkbox-label" for="checkbox4">부산·영남권</label>
-              </li>
-              <li>
-                <input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
-                <label class="checkbox-label" for="checkbox5">대구·영남권</label>
-              </li>
-            </ul>
-          </div>
-
-          <div class="cd-filter-block">
-            <h4>브랜드</h4>
-            <div class="cd-filter-content">
-              <div class="cd-select cd-filters">
-                <select class="filter" name="selectThis" id="selectThis">
-                  <option value="">전체</option>
-                  <option value=".option1">역전우동0410</option>
-                  <option value=".option2">백스비어</option>
-                  <option value=".option3">미정국수0410</option>
-                  <option value=".option4">돌배기집</option>
-                  <option value=".option5">빽다방</option>
-                  <option value=".option6">한신포차</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </form>
-        <a href="#0" class="cd-close">닫기</a>
-      </div> -->
-
-      <a href="#0" class="cd-filter-trigger">필터</a>
     </main>
   </section>
 
@@ -516,6 +393,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/sub.js"></script>
+  <script src="js/scroll.js"></script>
   <script src="js/jquery.mixitup.min.js"></script>
   <script src="js/briefing_filter.js"></script>
   <script src="js/modernizr.js"></script>

@@ -259,8 +259,12 @@ nav {
   text-align: center;
   color: #fff;
   background: url(../images/section3_bg.jpg) center no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+}
+@media (hover: hover) {
+  #section3 {
+    background-attachment: fixed;
+  }
 }
 #section3 .text {
   padding: 100px 30px;

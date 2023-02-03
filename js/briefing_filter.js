@@ -6,12 +6,12 @@ jQuery(document).ready(function ($) {
     triggerFilter(false);
   });
 
-  function triggerFilter($bool) {
+  /* function triggerFilter($bool) {
     var elementsToTrigger = $([$(".cd-filter-trigger"), $(".cd-filter"), $(".cd-tab-filter"), $(".cd-gallery")]);
     elementsToTrigger.each(function () {
       $(this).toggleClass("filter-is-visible", $bool);
     });
-  }
+  } */
 
   var filter_tab_placeholder = $(".cd-tab-filter .placeholder a"),
     filter_tab_placeholder_default_value = "Select",
@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
     };
   })();
 
-  $(".cd-filter-content input[type='search']").keyup(function () {
+  /* $(".cd-filter-content input[type='search']").keyup(function () {
     delay(function () {
       inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
       if (inputText.length > 0) {
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
         $(".cd-gallery ul").mixItUp("filter", "all");
       }
     }, 200);
-  });
+  }); */
 });
 
 var buttonFilter = {

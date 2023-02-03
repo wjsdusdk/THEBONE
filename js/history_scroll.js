@@ -6,7 +6,7 @@ $(document).ready(function () {
     for (n = 0; n <= 20; n++) {
       var offset = $("#history .box").eq(n).offset().top;
       if (w < 768) {
-        if (scrollTop + 500 >= offset) {
+        if (scrollTop + 700 >= offset) {
           $("#history .box").eq(n).children(".wrap1").children(".horizontal").css({
             opacity: "1",
             left: "0",
@@ -54,7 +54,7 @@ $(document).ready(function () {
         var offset_aa = $("#history .box")
           .eq(2 * n)
           .offset().top;
-        if (scrollTop + 600 >= offset_aa) {
+        if (scrollTop + 1000 >= offset_aa) {
           $("#history .box")
             .eq(2 * n)
             .children(".wrap1")

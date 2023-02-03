@@ -6,7 +6,7 @@ $(document).ready(function () {
     if (w < 576) {
       for (n = 0; n <= 20; n++) {
         var offset = $(".scroll").eq(n).offset().top;
-        if (scrollTop + 500 >= offset) {
+        if (scrollTop + 700 >= offset) {
           $(".scroll").eq(n).css({
             opacity: "1",
             top: "0",
@@ -25,7 +25,7 @@ $(document).ready(function () {
         var offset = $(".scroll")
           .eq(2 * n)
           .offset().top;
-        if (scrollTop + 800 >= offset) {
+        if (scrollTop + 1000 >= offset) {
           $(".scroll")
             .eq(2 * n + 1)
             .css({
@@ -60,7 +60,7 @@ $(document).ready(function () {
     } else {
       for (n = 0; n <= 20; n++) {
         var offset = $(".scroll").eq(n).offset().top;
-        if (scrollTop + 800 >= offset) {
+        if (scrollTop + 1100 >= offset) {
           $(".scroll").eq(n).css({
             opacity: "1",
             top: "0",

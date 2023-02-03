@@ -154,480 +154,482 @@
 
   <section id="internal">
     <div class="container">
-      <div class="map">
-        <div id="map"></div>
-      </div>
-      <div class="search reset">
-        <div class="form-box">
-          <p>지역</p>
-          <select class="form-control" id="location1" name="location1" onchange="locationKindChange(this)">
-            <option value="시/도">시/도</option>
-            <option value="서울특별시">서울특별시</option>
-            <option value="부산광역시">부산광역시</option>
-            <option value="대구광역시">대구광역시</option>
-            <option value="인천광역시">인천광역시</option>
-            <option value="광주광역시">광주광역시</option>
-            <option value="대전광역시">대전광역시</option>
-            <option value="울산광역시">울산광역시</option>
-            <option value="경기도">경기도</option>
-            <option value="강원도">강원도</option>
-            <option value="충청북도">충청북도</option>
-            <option value="충청남도">충청남도</option>
-            <option value="전라북도">전라북도</option>
-            <option value="전라남도">전라남도</option>
-            <option value="경상북도">경상북도</option>
-            <option value="경상남도">경상남도</option>
-            <option value="제주특별자치도">제주특별자치도</option>
-            <option value="세종특별자치시">세종특별자치시</option>
-          </select>
+      <div class="px-5pc">
+        <div class="map">
+          <div id="map"></div>
         </div>
-        <div class="form-box">
-          <select class="form-control" id="location2" name="location2">
-            <option>시/군/구</option>
-          </select>
+        <div class="search reset">
+          <div class="form-box">
+            <p>지역</p>
+            <select class="form-control" id="location1" name="location1" onchange="locationKindChange(this)">
+              <option value="시/도">시/도</option>
+              <option value="서울특별시">서울특별시</option>
+              <option value="부산광역시">부산광역시</option>
+              <option value="대구광역시">대구광역시</option>
+              <option value="인천광역시">인천광역시</option>
+              <option value="광주광역시">광주광역시</option>
+              <option value="대전광역시">대전광역시</option>
+              <option value="울산광역시">울산광역시</option>
+              <option value="경기도">경기도</option>
+              <option value="강원도">강원도</option>
+              <option value="충청북도">충청북도</option>
+              <option value="충청남도">충청남도</option>
+              <option value="전라북도">전라북도</option>
+              <option value="전라남도">전라남도</option>
+              <option value="경상북도">경상북도</option>
+              <option value="경상남도">경상남도</option>
+              <option value="제주특별자치도">제주특별자치도</option>
+              <option value="세종특별자치시">세종특별자치시</option>
+            </select>
+          </div>
+          <div class="form-box">
+            <select class="form-control" id="location2" name="location2">
+              <option>시/군/구</option>
+            </select>
+          </div>
+          <hr class="delete_xl">
+          <div class="form-box">
+            <p>브랜드</p>
+            <select class="form-control" name="brand" id="brand">
+              <option>브랜드</option>
+              <option value="인생설렁탕">인생설렁탕</option>
+              <option value="롤링파스타">롤링파스타</option>
+              <option value="막이오름">막이오름</option>
+              <option value="원조쌈밥집">원조쌈밥집</option>
+              <option value="한신포차">한신포차</option>
+              <option value="새마을식당">새마을식당</option>
+              <option value="본가">본가</option>
+              <option value="빽다방">빽다방</option>
+              <option value="홍콩반점0410">홍콩반점0410</option>
+              <option value="미정국수0410">미정국수0410</option>
+              <option value="백스비어">백스비어</option>
+              <option value="역전우동0410">역전우동0410</option>
+              <option value="돌배기집">돌배기집</option>
+              <option value="백철판0410">백철판0410</option>
+              <option value="성성식당">성성식당</option>
+              <option value="대한국밥">대한국밥</option>
+              <option value="원키친">원키친</option>
+              <option value="리춘시장">리춘시장</option>
+            </select>
+          </div>
+          <div class="form-box">
+            <p>매장명</p>
+            <input type="text" placeholder="매장명" class="form-control">
+            <a href="javascript:void(0);"><i class="fas fa-search"></i></a>
+          </div>
         </div>
-        <hr class="delete_xl">
-        <div class="form-box">
-          <p>브랜드</p>
-          <select class="form-control" name="brand" id="brand">
-            <option>브랜드</option>
-            <option value="인생설렁탕">인생설렁탕</option>
-            <option value="롤링파스타">롤링파스타</option>
-            <option value="막이오름">막이오름</option>
-            <option value="원조쌈밥집">원조쌈밥집</option>
-            <option value="한신포차">한신포차</option>
-            <option value="새마을식당">새마을식당</option>
-            <option value="본가">본가</option>
-            <option value="빽다방">빽다방</option>
-            <option value="홍콩반점0410">홍콩반점0410</option>
-            <option value="미정국수0410">미정국수0410</option>
-            <option value="백스비어">백스비어</option>
-            <option value="역전우동0410">역전우동0410</option>
-            <option value="돌배기집">돌배기집</option>
-            <option value="백철판0410">백철판0410</option>
-            <option value="성성식당">성성식당</option>
-            <option value="대한국밥">대한국밥</option>
-            <option value="원키친">원키친</option>
-            <option value="리춘시장">리춘시장</option>
-          </select>
-        </div>
-        <div class="form-box">
-          <p>매장명</p>
-          <input type="text" placeholder="매장명" class="form-control">
-          <a href="javascript:void(0);"><i class="fas fa-search"></i></a>
-        </div>
-      </div>
-      <div class="list">
-        <div class="title">
-          <ul class="reset">
-            <li>브랜드</li>
-            <li>지역</li>
-            <li>매장명</li>
-            <li class="delete block_md">주소</li>
-            <li class="delete block_xl">전화번호</li>
-          </ul>
-        </div>
-        <div class="contents">
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>역전우동</li>
-              <li>서울특별시</li>
-              <li>신림난곡점</li>
-              <li class="delete block_md">서울 관악구 신림동 617-1</li>
-              <li class="delete block_xl">02-838-6863</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>서울 관악구 신림동 617-1</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>9:00~22:00(L.O 21:30)</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>없음</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>02-838-6863</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>명절당일</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>bar 11석</p>
+        <div class="list">
+          <div class="title">
+            <ul class="reset">
+              <li>브랜드</li>
+              <li>지역</li>
+              <li>매장명</li>
+              <li class="delete block_md">주소</li>
+              <li class="delete block_xl">전화번호</li>
+            </ul>
+          </div>
+          <div class="contents">
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>역전우동</li>
+                <li>서울특별시</li>
+                <li>신림난곡점</li>
+                <li class="delete block_md">서울 관악구 신림동 617-1</li>
+                <li class="delete block_xl">02-838-6863</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>서울 관악구 신림동 617-1</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>9:00~22:00(L.O 21:30)</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>없음</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>02-838-6863</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>명절당일</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>bar 11석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>한신포차</li>
-              <li>경기도</li>
-              <li>양평시장점</li>
-              <li class="delete block_md">경기도 양평군 양평읍 양평시장길 28, 가동 2층</li>
-              <li class="delete block_xl">070-4647-1083</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>경기도 양평군 양평읍 양평시장길 28, 가동 2층</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>16:00~22:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>인근 공영 주차장 (양평시장 공영 주차장)</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>070-4647-1083</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>23테이블/84석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>한신포차</li>
+                <li>경기도</li>
+                <li>양평시장점</li>
+                <li class="delete block_md">경기도 양평군 양평읍 양평시장길 28, 가동 2층</li>
+                <li class="delete block_xl">070-4647-1083</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>경기도 양평군 양평읍 양평시장길 28, 가동 2층</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>16:00~22:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>인근 공영 주차장 (양평시장 공영 주차장)</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>070-4647-1083</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>23테이블/84석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>막이오름</li>
-              <li>부산광역시</li>
-              <li>부산동래점</li>
-              <li class="delete block_md">부산광역시 동래구 명륜로 139번길 35 2층 (명륜동)</li>
-              <li class="delete block_xl">053-553-3222</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>부산광역시 동래구 명륜로 139번길 35 2층 (명륜동)</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>17:00 ~ 22:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>없음</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>053-553-3222</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>11테이블 / 44석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>막이오름</li>
+                <li>부산광역시</li>
+                <li>부산동래점</li>
+                <li class="delete block_md">부산광역시 동래구 명륜로 139번길 35 2층 (명륜동)</li>
+                <li class="delete block_xl">053-553-3222</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>부산광역시 동래구 명륜로 139번길 35 2층 (명륜동)</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>17:00 ~ 22:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>없음</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>053-553-3222</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>11테이블 / 44석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>빽다방</li>
-              <li>대구광역시</li>
-              <li>대구칠곡점</li>
-              <li class="delete block_md">대구광역시 북구 칠곡중앙대로 638</li>
-              <li class="delete block_xl">070-7543-6519</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>대구광역시 북구 칠곡중앙대로 638</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>09:00 ~ 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p> 50대</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>053-325-3739</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>명절 당일</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>9테이블 12석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>빽다방</li>
+                <li>대구광역시</li>
+                <li>대구칠곡점</li>
+                <li class="delete block_md">대구광역시 북구 칠곡중앙대로 638</li>
+                <li class="delete block_xl">070-7543-6519</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>대구광역시 북구 칠곡중앙대로 638</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>09:00 ~ 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p> 50대</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>053-325-3739</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>명절 당일</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>9테이블 12석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>새마을식당</li>
-              <li>부산광역시</li>
-              <li>부산장산점</li>
-              <li class="delete block_md">부산광역시 해운대구 세실로 27번길 23 2층</li>
-              <li class="delete block_xl">051-702-9630</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>부산광역시 해운대구 세실로 27번길 23 2층</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>11:00 ~ 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>없음</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>051-702-9630</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>8테이블 / 32석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>새마을식당</li>
+                <li>부산광역시</li>
+                <li>부산장산점</li>
+                <li class="delete block_md">부산광역시 해운대구 세실로 27번길 23 2층</li>
+                <li class="delete block_xl">051-702-9630</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>부산광역시 해운대구 세실로 27번길 23 2층</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>11:00 ~ 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>없음</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>051-702-9630</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>8테이블 / 32석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>빽다방</li>
-              <li>서울특별시</li>
-              <li>가오리역점</li>
-              <li class="delete block_md">서울특별시 강북구 수유동 339-6</li>
-              <li class="delete block_xl">02-991-0037</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>서울특별시 강북구 수유동 339-6</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>08:00 ~ 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>불가</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>02-991-0037</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>테이블 13 / 좌석 26</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>빽다방</li>
+                <li>서울특별시</li>
+                <li>가오리역점</li>
+                <li class="delete block_md">서울특별시 강북구 수유동 339-6</li>
+                <li class="delete block_xl">02-991-0037</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>서울특별시 강북구 수유동 339-6</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>08:00 ~ 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>불가</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>02-991-0037</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>테이블 13 / 좌석 26</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>홍콩반점</li>
-              <li>서울특별시</li>
-              <li>관악난곡점</li>
-              <li class="delete block_md">서울특별시 관악구 난우길 20, 2층</li>
-              <li class="delete block_xl">02-864-0410</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>서울특별시 관악구 난우길 20, 2층</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>11:00 ~ 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>없음</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>02-864-0410</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>11테이블 48석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>홍콩반점</li>
+                <li>서울특별시</li>
+                <li>관악난곡점</li>
+                <li class="delete block_md">서울특별시 관악구 난우길 20, 2층</li>
+                <li class="delete block_xl">02-864-0410</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>서울특별시 관악구 난우길 20, 2층</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>11:00 ~ 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>없음</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>02-864-0410</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>11테이블 48석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>빽다방</li>
-              <li>충청남도</li>
-              <li>아산탕정점</li>
-              <li class="delete block_md">충청남도 아산시 탕정면 탕정면로8번길 33-14 (명암리)</li>
-              <li class="delete block_xl">041-544-2022</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>충청남도 아산시 탕정면 탕정면로8번길 33-14 (명암리)</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>평일 08:00 ~ 22:00<br>주말 09:00 ~ 22:00 <br> 아이스크림 마감 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>불가</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>041-544-2022</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>테이블 21 / 좌석 33</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>빽다방</li>
+                <li>충청남도</li>
+                <li>아산탕정점</li>
+                <li class="delete block_md">충청남도 아산시 탕정면 탕정면로8번길 33-14 (명암리)</li>
+                <li class="delete block_xl">041-544-2022</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>충청남도 아산시 탕정면 탕정면로8번길 33-14 (명암리)</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>평일 08:00 ~ 22:00<br>주말 09:00 ~ 22:00 <br> 아이스크림 마감 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>불가</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>041-544-2022</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>테이블 21 / 좌석 33</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>리춘시장</li>
-              <li>서울특별시</li>
-              <li>성신여대점</li>
-              <li class="delete block_md">서울 성북구 동소문로20다길6 1층</li>
-              <li class="delete block_xl">02-6080-0410</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>서울 성북구 동소문로20다길6 1층</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>17:00 ~ 21:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>없음</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>02-6080-0410</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>15테이블 52석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>리춘시장</li>
+                <li>서울특별시</li>
+                <li>성신여대점</li>
+                <li class="delete block_md">서울 성북구 동소문로20다길6 1층</li>
+                <li class="delete block_xl">02-6080-0410</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>서울 성북구 동소문로20다길6 1층</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>17:00 ~ 21:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>없음</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>02-6080-0410</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>15테이블 52석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
-          <ul>
-            <div class="wrap reset accordion-1">
-              <li>한신포차</li>
-              <li>경상남도</li>
-              <li>사천벌리점</li>
-              <li class="delete block_md">경남 사천시 벌리2길 79(벌리동) 1층</li>
-              <li class="delete block_xl">055-832-6692</li>
-            </div>
-            <div class="detail accordion-2">
-              <div class="flex_md">
-                <div class="photo col-40_md rectangle"></div>
-                <div class="wrap2 col-60_md">
-                  <div class="text reset">
-                    <p>위치</p>
-                    <p>경남 사천시 벌리2길 79(벌리동) 1층</p>
-                  </div>
-                  <div class="text reset">
-                    <p>영업시간</p>
-                    <p>17:00~02:00</p>
-                  </div>
-                  <div class="text reset">
-                    <p>주차</p>
-                    <p>매장 뒷편 공영주차장</p>
-                  </div>
-                  <div class="text reset">
-                    <p>전화번호</p>
-                    <p>055-832-6692</p>
-                  </div>
-                  <div class="text reset">
-                    <p>휴일</p>
-                    <p>연중무휴</p>
-                  </div>
-                  <div class="text reset">
-                    <p>좌석</p>
-                    <p>19테이블/76석</p>
+            </ul>
+            <ul>
+              <div class="wrap reset accordion-1">
+                <li>한신포차</li>
+                <li>경상남도</li>
+                <li>사천벌리점</li>
+                <li class="delete block_md">경남 사천시 벌리2길 79(벌리동) 1층</li>
+                <li class="delete block_xl">055-832-6692</li>
+              </div>
+              <div class="detail accordion-2">
+                <div class="flex_md">
+                  <div class="photo col-40_md rectangle"></div>
+                  <div class="wrap2 col-60_md">
+                    <div class="text reset">
+                      <p>위치</p>
+                      <p>경남 사천시 벌리2길 79(벌리동) 1층</p>
+                    </div>
+                    <div class="text reset">
+                      <p>영업시간</p>
+                      <p>17:00~02:00</p>
+                    </div>
+                    <div class="text reset">
+                      <p>주차</p>
+                      <p>매장 뒷편 공영주차장</p>
+                    </div>
+                    <div class="text reset">
+                      <p>전화번호</p>
+                      <p>055-832-6692</p>
+                    </div>
+                    <div class="text reset">
+                      <p>휴일</p>
+                      <p>연중무휴</p>
+                    </div>
+                    <div class="text reset">
+                      <p>좌석</p>
+                      <p>19테이블/76석</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
