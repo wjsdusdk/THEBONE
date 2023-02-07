@@ -669,7 +669,7 @@ header .menu .icon_x {
   position: absolute;
   width: 20px;
   top: 0;
-  left: 68vw;
+  right: 7vw;
   transform: translateX(-4px);
   font-size: 20px;
   color: #fff;
@@ -692,7 +692,7 @@ header .menu .title {
 header .menu .icon_arrow_text {
   position: absolute;
   top: 0;
-  left: 68vw;
+  right: 8vw;
   line-height: 50px;
 }
 header .menu .icon_arrow_text.on {

@@ -46,7 +46,7 @@ $(document).ready(function () {
   // 모바일, 태블릿 .menu
 
   $(".icon_menu").click(function () {
-    $(".menu").css({ "min-width": "200px", width: "80%" });
+    $(".menu").css({ "min-width": "200px", width: "50%" });
   });
   $(".icon_x").click(function () {
     $(".menu").css({ "min-width": "0", width: "0" });
